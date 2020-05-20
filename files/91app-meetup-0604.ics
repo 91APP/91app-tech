@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:KKTIX
+BEGIN:VTIMEZONE
+TZID:Taipei
+END:VTIMEZONE
+BEGIN:VEVENT
+DESCRIPTION:<br>場次：6/4<br>活動資訊：https://91app.kktix.cc/events/online-meetup-6<br>活動前一日會 Email 寄發 YouTube 連結，還請確認 KKTIX 報名之 Email 是否有正常收到通知信件。<br><strong>議程一 DevOps的金字塔原理與技術</strong><br>講師 | 李智樺（Ruddy Lee）敏捷教練<br><strong>議程二 DevOps 時代下的前端工程師</strong><br>講師 | 梁瑋哲（Ted Liang) Android Team 部門主管
+DTEND:20200604T130000Z
+DTSTAMP:20200604T103000Z
+DTSTART:20200604T113000Z
+CLASS:PUBLIC
+LOCATION:YouTube 首播
+SEQUENCE:0
+SUMMARY:91APP電商技術大解密—2020 線上技術分享系列活動 6/4
+END:VEVENT
+END:VCALENDAR

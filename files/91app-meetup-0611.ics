@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:KKTIX
+BEGIN:VTIMEZONE
+TZID:Taipei
+END:VTIMEZONE
+BEGIN:VEVENT
+DESCRIPTION:<br>場次：6/11<br>活動資訊：https://91app.kktix.cc/events/online-meetup-6<br>活動前一日會 Email 寄發 YouTube 連結，還請確認 KKTIX 報名之 Email 是否有正常收到通知信件。<br><strong>議程一 提高前後端串接效率的新作法—使用 GraphQL & React-Apollo</strong><br>講師 | 周仰皓（Andy Chou）軟體工程師<br><strong>議程二 Backend RD 的日常</strong><br>講師 | 黃信華（Knight Huang）資深軟體工程師
+DTEND:20200611T130000Z
+DTSTAMP:20200611T103000Z
+DTSTART:20200611T113000Z
+CLASS:PUBLIC
+LOCATION:YouTube 首播
+SEQUENCE:0
+SUMMARY:91APP電商技術大解密—2020 線上技術分享系列活動 6/11
+END:VEVENT
+END:VCALENDAR
