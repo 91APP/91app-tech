@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:KKTIX
+BEGIN:VTIMEZONE
+TZID:Taipei
+END:VTIMEZONE
+BEGIN:VEVENT
+DESCRIPTION:<br>場次：6/18<br>活動資訊：https://91app.kktix.cc/events/online-meetup-6<br>活動前一日會 Email 寄發 YouTube 連結，還請確認 KKTIX 報名之 Email 是否有正常收到通知信件。<br><strong>議程一 新促購機制——抽象化系統設計思維以促購引擎為例</strong><br>講師 | 呂致緯（Zhi-Wei Lu）資深軟體工程師<br><strong>議程二 解密 91APP Queue System</strong><br>講師 | 蔡奕陵（Steven Tsai）資深軟體工程師<br><strong>綜合座談</strong><br>對談人<br><ul><li>濮紹華（Alan Pu）資深技術總監</li><li>吳剛志（Andrew Wu）首席架構師</li><li>李敏宏（Matt Lee）資深技術總監</li><li>施維忠（Steven Shih）資深技術總監</li></ul>
+DTEND:20200618T133000Z
+DTSTAMP:20200618T103000Z
+DTSTART:20200618T113000Z
+CLASS:PUBLIC
+LOCATION:YouTube 首播
+SEQUENCE:0
+SUMMARY:91APP電商技術大解密—2020 線上技術分享系列活動 6/18
+END:VEVENT
+END:VCALENDAR
