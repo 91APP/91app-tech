@@ -767,7 +767,7 @@ h1, h2, h3, h4, h5,
 
 .counter .counter-text strong {
   line-height: .5;
-  font-size: 3.5rem;
+  font-size: 1.3rem;
   display: block;
   font-weight: 700;
   color: #000;
@@ -1205,4 +1205,13 @@ h1, h2, h3, h4, h5,
 
 .btn-order {
   font-size: 18px;
+}
+
+.white_link a {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.white_link a:hover {
+  color: white;
+  text-decoration: underline;
 }
