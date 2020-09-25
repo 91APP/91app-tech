@@ -1,0 +1,812 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 2.24.57"/><title data-react-helmet="true">91APP Backend RD 的日常 | 91APP Technical Network</title><link data-react-helmet="true" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap"/><link data-react-helmet="true" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/><meta data-react-helmet="true" name="description" content="91APP Technical Network"/><meta data-react-helmet="true" property="og:title" content="91APP Backend RD 的日常"/><meta data-react-helmet="true" property="og:description" content="91APP Technical Network"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="91APP"/><meta data-react-helmet="true" name="twitter:title" content="91APP Backend RD 的日常"/><meta data-react-helmet="true" name="twitter:description" content="91APP Technical Network"/><style id="jss-server-side">html{box-sizing:border-box;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}*,::after,::before{box-sizing:inherit}b,strong{font-weight:700}body{color:rgba(0,0,0,.87);margin:0;font-size:.875rem;font-family:Roboto,Helvetica,Arial,sans-serif;font-weight:400;line-height:1.43;letter-spacing:.01071em;background-color:#fafafa}@media print{body{background-color:#fff}}body::-webkit-backdrop{background-color:#fafafa}body::backdrop{background-color:#fafafa}.MuiContainer-root{width:100%;display:block;box-sizing:border-box;margin-left:auto;margin-right:auto;padding-left:16px;padding-right:16px}@media (min-width:600px){.MuiContainer-root{padding-left:24px;padding-right:24px}}.MuiContainer-disableGutters{padding-left:0;padding-right:0}@media (min-width:600px){.MuiContainer-fixed{max-width:600px}}@media (min-width:960px){.MuiContainer-fixed{max-width:960px}}@media (min-width:1280px){.MuiContainer-fixed{max-width:1280px}}@media (min-width:1920px){.MuiContainer-fixed{max-width:1920px}}@media (min-width:0px){.MuiContainer-maxWidthXs{max-width:444px}}@media (min-width:600px){.MuiContainer-maxWidthSm{max-width:600px}}@media (min-width:960px){.MuiContainer-maxWidthMd{max-width:960px}}@media (min-width:1280px){.MuiContainer-maxWidthLg{max-width:1280px}}@media (min-width:1920px){.MuiContainer-maxWidthXl{max-width:1920px}}.MuiPaper-root{color:rgba(0,0,0,.87);transition:box-shadow .3s cubic-bezier(.4,0,.2,1) 0s;background-color:#fff}.MuiPaper-rounded{border-radius:4px}.MuiPaper-outlined{border:1px solid rgba(0,0,0,.12)}.MuiPaper-elevation0{box-shadow:none}.MuiPaper-elevation1{box-shadow:0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12)}.MuiPaper-elevation2{box-shadow:0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12)}.MuiPaper-elevation3{box-shadow:0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12)}.MuiPaper-elevation4{box-shadow:0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12)}.MuiPaper-elevation5{box-shadow:0 3px 5px -1px rgba(0,0,0,.2),0 5px 8px 0 rgba(0,0,0,.14),0 1px 14px 0 rgba(0,0,0,.12)}.MuiPaper-elevation6{box-shadow:0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12)}.MuiPaper-elevation7{box-shadow:0 4px 5px -2px rgba(0,0,0,.2),0 7px 10px 1px rgba(0,0,0,.14),0 2px 16px 1px rgba(0,0,0,.12)}.MuiPaper-elevation8{box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12)}.MuiPaper-elevation9{box-shadow:0 5px 6px -3px rgba(0,0,0,.2),0 9px 12px 1px rgba(0,0,0,.14),0 3px 16px 2px rgba(0,0,0,.12)}.MuiPaper-elevation10{box-shadow:0 6px 6px -3px rgba(0,0,0,.2),0 10px 14px 1px rgba(0,0,0,.14),0 4px 18px 3px rgba(0,0,0,.12)}.MuiPaper-elevation11{box-shadow:0 6px 7px -4px rgba(0,0,0,.2),0 11px 15px 1px rgba(0,0,0,.14),0 4px 20px 3px rgba(0,0,0,.12)}.MuiPaper-elevation12{box-shadow:0 7px 8px -4px rgba(0,0,0,.2),0 12px 17px 2px rgba(0,0,0,.14),0 5px 22px 4px rgba(0,0,0,.12)}.MuiPaper-elevation13{box-shadow:0 7px 8px -4px rgba(0,0,0,.2),0 13px 19px 2px rgba(0,0,0,.14),0 5px 24px 4px rgba(0,0,0,.12)}.MuiPaper-elevation14{box-shadow:0 7px 9px -4px rgba(0,0,0,.2),0 14px 21px 2px rgba(0,0,0,.14),0 5px 26px 4px rgba(0,0,0,.12)}.MuiPaper-elevation15{box-shadow:0 8px 9px -5px rgba(0,0,0,.2),0 15px 22px 2px rgba(0,0,0,.14),0 6px 28px 5px rgba(0,0,0,.12)}.MuiPaper-elevation16{box-shadow:0 8px 10px -5px rgba(0,0,0,.2),0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12)}.MuiPaper-elevation17{box-shadow:0 8px 11px -5px rgba(0,0,0,.2),0 17px 26px 2px rgba(0,0,0,.14),0 6px 32px 5px rgba(0,0,0,.12)}.MuiPaper-elevation18{box-shadow:0 9px 11px -5px rgba(0,0,0,.2),0 18px 28px 2px rgba(0,0,0,.14),0 7px 34px 6px rgba(0,0,0,.12)}.MuiPaper-elevation19{box-shadow:0 9px 12px -6px rgba(0,0,0,.2),0 19px 29px 2px rgba(0,0,0,.14),0 7px 36px 6px rgba(0,0,0,.12)}.MuiPaper-elevation20{box-shadow:0 10px 13px -6px rgba(0,0,0,.2),0 20px 31px 3px rgba(0,0,0,.14),0 8px 38px 7px rgba(0,0,0,.12)}.MuiPaper-elevation21{box-shadow:0 10px 13px -6px rgba(0,0,0,.2),0 21px 33px 3px rgba(0,0,0,.14),0 8px 40px 7px rgba(0,0,0,.12)}.MuiPaper-elevation22{box-shadow:0 10px 14px -6px rgba(0,0,0,.2),0 22px 35px 3px rgba(0,0,0,.14),0 8px 42px 7px rgba(0,0,0,.12)}.MuiPaper-elevation23{box-shadow:0 11px 14px -7px rgba(0,0,0,.2),0 23px 36px 3px rgba(0,0,0,.14),0 9px 44px 8px rgba(0,0,0,.12)}.MuiPaper-elevation24{box-shadow:0 11px 15px -7px rgba(0,0,0,.2),0 24px 38px 3px rgba(0,0,0,.14),0 9px 46px 8px rgba(0,0,0,.12)}.MuiAppBar-root{width:100%;display:flex;z-index:1100;box-sizing:border-box;flex-shrink:0;flex-direction:column}.MuiAppBar-positionFixed{top:0;left:auto;right:0;position:fixed}@media print{.MuiAppBar-positionFixed{position:absolute}}.MuiAppBar-positionAbsolute{top:0;left:auto;right:0;position:absolute}.MuiAppBar-positionSticky{top:0;left:auto;right:0;position:-webkit-sticky;position:sticky}.MuiAppBar-positionStatic{position:static}.MuiAppBar-positionRelative{position:relative}.MuiAppBar-colorDefault{color:rgba(0,0,0,.87);background-color:#f5f5f5}.MuiAppBar-colorPrimary{color:#fff;background-color:#e62511}.MuiAppBar-colorSecondary{color:#fff;background-color:#ffa434}.MuiAppBar-colorInherit{color:inherit}.MuiAppBar-colorTransparent{color:inherit;background-color:transparent}.MuiToolbar-root{display:flex;position:relative;align-items:center}.MuiToolbar-gutters{padding-left:16px;padding-right:16px}@media (min-width:600px){.MuiToolbar-gutters{padding-left:24px;padding-right:24px}}.MuiToolbar-regular{min-height:56px}@media (min-width:0px) and (orientation:landscape){.MuiToolbar-regular{min-height:48px}}@media (min-width:600px){.MuiToolbar-regular{min-height:64px}}.MuiToolbar-dense{min-height:48px}.MuiTypography-root{margin:0}.MuiTypography-body2{font-size:.875rem;font-family:Roboto,Helvetica,Arial,sans-serif;font-weight:400;line-height:1.43;letter-spacing:.01071em}.MuiTypography-body1{font-size:1rem;font-family:Roboto,Helvetica,Arial,sans-serif;font-weight:400;line-height:1.5;letter-spacing:.00938em}.MuiTypography-caption{font-size:.75rem;font-family:Roboto,Helvetica,Arial,sans-serif;font-weight:400;line-height:1.66;letter-spacing:.03333em}.MuiTypography-button{font-size:.875rem;font-family:Roboto,Helvetica,Arial,sans-serif;font-weight:500;line-height:1.75;letter-spacing:.02857em;text-transform:uppercase}.MuiTypography-h1{font-size:6rem;font-family:Roboto,Helvetica,Arial,sans-serif;font-weight:300;line-height:1.167;letter-spacing:-.01562em}.MuiTypography-h2{font-size:3.75rem;font-family:Roboto,Helvetica,Arial,sans-serif;font-weight:300;line-height:1.2;letter-spacing:-.00833em}.MuiTypography-h3{font-size:3rem;font-family:Roboto,Helvetica,Arial,sans-serif;font-weight:400;line-height:1.167;letter-spacing:0}.MuiTypography-h4{font-size:2.125rem;font-family:Roboto,Helvetica,Arial,sans-serif;font-weight:400;line-height:1.235;letter-spacing:.00735em}.MuiTypography-h5{font-size:1.5rem;font-family:Roboto,Helvetica,Arial,sans-serif;font-weight:400;line-height:1.334;letter-spacing:0}.MuiTypography-h6{font-size:1.25rem;font-family:Roboto,Helvetica,Arial,sans-serif;font-weight:500;line-height:1.6;letter-spacing:.0075em}.MuiTypography-subtitle1{font-size:1rem;font-family:Roboto,Helvetica,Arial,sans-serif;font-weight:400;line-height:1.75;letter-spacing:.00938em}.MuiTypography-subtitle2{font-size:.875rem;font-family:Roboto,Helvetica,Arial,sans-serif;font-weight:500;line-height:1.57;letter-spacing:.00714em}.MuiTypography-overline{font-size:.75rem;font-family:Roboto,Helvetica,Arial,sans-serif;font-weight:400;line-height:2.66;letter-spacing:.08333em;text-transform:uppercase}.MuiTypography-srOnly{width:1px;height:1px;overflow:hidden;position:absolute}.MuiTypography-alignLeft{text-align:left}.MuiTypography-alignCenter{text-align:center}.MuiTypography-alignRight{text-align:right}.MuiTypography-alignJustify{text-align:justify}.MuiTypography-noWrap{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.MuiTypography-gutterBottom{margin-bottom:.35em}.MuiTypography-paragraph{margin-bottom:16px}.MuiTypography-colorInherit{color:inherit}.MuiTypography-colorPrimary{color:#e62511}.MuiTypography-colorSecondary{color:#ffa434}.MuiTypography-colorTextPrimary{color:rgba(0,0,0,.87)}.MuiTypography-colorTextSecondary{color:rgba(0,0,0,.54)}.MuiTypography-colorError{color:#f44336}.MuiTypography-displayInline{display:inline}.MuiTypography-displayBlock{display:block}.MuiSvgIcon-root{fill:currentColor;width:1em;height:1em;display:inline-block;font-size:1.5rem;transition:fill .2s cubic-bezier(.4,0,.2,1) 0s;flex-shrink:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.MuiSvgIcon-colorPrimary{color:#e62511}.MuiSvgIcon-colorSecondary{color:#ffa434}.MuiSvgIcon-colorAction{color:rgba(0,0,0,.54)}.MuiSvgIcon-colorError{color:#f44336}.MuiSvgIcon-colorDisabled{color:rgba(0,0,0,.26)}.MuiSvgIcon-fontSizeInherit{font-size:inherit}.MuiSvgIcon-fontSizeSmall{font-size:1.25rem}.MuiSvgIcon-fontSizeLarge{font-size:2.1875rem}.MuiDrawer-docked{flex:0 0 auto}.MuiDrawer-paper{top:0;flex:1 0 auto;height:100%;display:flex;outline:0;z-index:1200;position:fixed;overflow-y:auto;flex-direction:column;-webkit-overflow-scrolling:touch}.MuiDrawer-paperAnchorLeft{left:0;right:auto}.MuiDrawer-paperAnchorRight{left:auto;right:0}.MuiDrawer-paperAnchorTop{top:0;left:0;right:0;bottom:auto;height:auto;max-height:100%}.MuiDrawer-paperAnchorBottom{top:auto;left:0;right:0;bottom:0;height:auto;max-height:100%}.MuiDrawer-paperAnchorDockedLeft{border-right:1px solid rgba(0,0,0,.12)}.MuiDrawer-paperAnchorDockedTop{border-bottom:1px solid rgba(0,0,0,.12)}.MuiDrawer-paperAnchorDockedRight{border-left:1px solid rgba(0,0,0,.12)}.MuiDrawer-paperAnchorDockedBottom{border-top:1px solid rgba(0,0,0,.12)}.MuiButtonBase-root{color:inherit;border:0;cursor:pointer;margin:0;display:inline-flex;outline:0;padding:0;position:relative;align-items:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border-radius:0;vertical-align:middle;-moz-appearance:none;justify-content:center;text-decoration:none;background-color:transparent;-webkit-appearance:none;-webkit-tap-highlight-color:transparent}.MuiButtonBase-root::-moz-focus-inner{border-style:none}.MuiButtonBase-root.Mui-disabled{cursor:default;pointer-events:none}@media print{.MuiButtonBase-root{-webkit-print-color-adjust:exact;color-adjust:exact}}.MuiIconButton-root{flex:0 0 auto;color:rgba(0,0,0,.54);padding:12px;overflow:visible;font-size:1.5rem;text-align:center;transition:background-color 150ms cubic-bezier(.4,0,.2,1) 0s;border-radius:50%}.MuiIconButton-root:hover{background-color:rgba(0,0,0,.04)}.MuiIconButton-root.Mui-disabled{color:rgba(0,0,0,.26);background-color:transparent}@media (hover:none){.MuiIconButton-root:hover{background-color:transparent}}.MuiIconButton-edgeStart{margin-left:-12px}.MuiIconButton-sizeSmall.MuiIconButton-edgeStart{margin-left:-3px}.MuiIconButton-edgeEnd{margin-right:-12px}.MuiIconButton-sizeSmall.MuiIconButton-edgeEnd{margin-right:-3px}.MuiIconButton-colorInherit{color:inherit}.MuiIconButton-colorPrimary{color:#e62511}.MuiIconButton-colorPrimary:hover{background-color:rgba(230,37,17,.04)}@media (hover:none){.MuiIconButton-colorPrimary:hover{background-color:transparent}}.MuiIconButton-colorSecondary{color:#ffa434}.MuiIconButton-colorSecondary:hover{background-color:rgba(255,164,52,.04)}@media (hover:none){.MuiIconButton-colorSecondary:hover{background-color:transparent}}.MuiIconButton-sizeSmall{padding:3px;font-size:1.125rem}.MuiIconButton-label{width:100%;display:flex;align-items:inherit;justify-content:inherit}.MuiButton-root{color:rgba(0,0,0,.87);padding:6px 16px;font-size:.875rem;min-width:64px;box-sizing:border-box;transition:background-color 250ms cubic-bezier(.4,0,.2,1) 0s,box-shadow 250ms cubic-bezier(.4,0,.2,1) 0s,border 250ms cubic-bezier(.4,0,.2,1) 0s;font-family:Roboto,Helvetica,Arial,sans-serif;font-weight:500;line-height:1.75;border-radius:4px;letter-spacing:.02857em;text-transform:uppercase}.MuiButton-root:hover{text-decoration:none;background-color:rgba(0,0,0,.04)}.MuiButton-root.Mui-disabled{color:rgba(0,0,0,.26)}@media (hover:none){.MuiButton-root:hover{background-color:transparent}}.MuiButton-root:hover.Mui-disabled{background-color:transparent}.MuiButton-label{width:100%;display:inherit;align-items:inherit;justify-content:inherit}.MuiButton-text{padding:6px 8px}.MuiButton-textPrimary{color:#e62511}.MuiButton-textPrimary:hover{background-color:rgba(230,37,17,.04)}@media (hover:none){.MuiButton-textPrimary:hover{background-color:transparent}}.MuiButton-textSecondary{color:#ffa434}.MuiButton-textSecondary:hover{background-color:rgba(255,164,52,.04)}@media (hover:none){.MuiButton-textSecondary:hover{background-color:transparent}}.MuiButton-outlined{border:1px solid rgba(0,0,0,.23);padding:5px 15px}.MuiButton-outlined.Mui-disabled{border:1px solid rgba(0,0,0,.12)}.MuiButton-outlinedPrimary{color:#e62511;border:1px solid rgba(230,37,17,.5)}.MuiButton-outlinedPrimary:hover{border:1px solid #e62511;background-color:rgba(230,37,17,.04)}@media (hover:none){.MuiButton-outlinedPrimary:hover{background-color:transparent}}.MuiButton-outlinedSecondary{color:#ffa434;border:1px solid rgba(255,164,52,.5)}.MuiButton-outlinedSecondary:hover{border:1px solid #ffa434;background-color:rgba(255,164,52,.04)}.MuiButton-outlinedSecondary.Mui-disabled{border:1px solid rgba(0,0,0,.26)}@media (hover:none){.MuiButton-outlinedSecondary:hover{background-color:transparent}}.MuiButton-contained{color:rgba(0,0,0,.87);box-shadow:0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);background-color:#e0e0e0}.MuiButton-contained:hover{box-shadow:0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);background-color:#d5d5d5}.MuiButton-contained.Mui-focusVisible{box-shadow:0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12)}.MuiButton-contained:active{box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12)}.MuiButton-contained.Mui-disabled{color:rgba(0,0,0,.26);box-shadow:none;background-color:rgba(0,0,0,.12)}@media (hover:none){.MuiButton-contained:hover{box-shadow:0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);background-color:#e0e0e0}}.MuiButton-contained:hover.Mui-disabled{background-color:rgba(0,0,0,.12)}.MuiButton-containedPrimary{color:#fff;background-color:#e62511}.MuiButton-containedPrimary:hover{background-color:#c00}@media (hover:none){.MuiButton-containedPrimary:hover{background-color:#e62511}}.MuiButton-containedSecondary{color:#fff;background-color:#ffa434}.MuiButton-containedSecondary:hover{background-color:#c77500}@media (hover:none){.MuiButton-containedSecondary:hover{background-color:#ffa434}}.MuiButton-disableElevation{box-shadow:none}.MuiButton-disableElevation:hover{box-shadow:none}.MuiButton-disableElevation.Mui-focusVisible{box-shadow:none}.MuiButton-disableElevation:active{box-shadow:none}.MuiButton-disableElevation.Mui-disabled{box-shadow:none}.MuiButton-colorInherit{color:inherit;border-color:currentColor}.MuiButton-textSizeSmall{padding:4px 5px;font-size:.8125rem}.MuiButton-textSizeLarge{padding:8px 11px;font-size:.9375rem}.MuiButton-outlinedSizeSmall{padding:3px 9px;font-size:.8125rem}.MuiButton-outlinedSizeLarge{padding:7px 21px;font-size:.9375rem}.MuiButton-containedSizeSmall{padding:4px 10px;font-size:.8125rem}.MuiButton-containedSizeLarge{padding:8px 22px;font-size:.9375rem}.MuiButton-fullWidth{width:100%}.MuiButton-startIcon{display:inherit;margin-left:-4px;margin-right:8px}.MuiButton-startIcon.MuiButton-iconSizeSmall{margin-left:-2px}.MuiButton-endIcon{display:inherit;margin-left:8px;margin-right:-4px}.MuiButton-endIcon.MuiButton-iconSizeSmall{margin-right:-2px}.MuiButton-iconSizeSmall>:first-child{font-size:18px}.MuiButton-iconSizeMedium>:first-child{font-size:20px}.MuiButton-iconSizeLarge>:first-child{font-size:22px}.MuiFab-root{color:rgba(0,0,0,.87);width:56px;height:56px;padding:0;font-size:.875rem;min-width:0;box-shadow:0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12);box-sizing:border-box;min-height:36px;transition:background-color 250ms cubic-bezier(.4,0,.2,1) 0s,box-shadow 250ms cubic-bezier(.4,0,.2,1) 0s,border 250ms cubic-bezier(.4,0,.2,1) 0s;font-family:Roboto,Helvetica,Arial,sans-serif;font-weight:500;line-height:1.75;border-radius:50%;letter-spacing:.02857em;text-transform:uppercase;background-color:#e0e0e0}.MuiFab-root:active{box-shadow:0 7px 8px -4px rgba(0,0,0,.2),0 12px 17px 2px rgba(0,0,0,.14),0 5px 22px 4px rgba(0,0,0,.12)}.MuiFab-root:hover{text-decoration:none;background-color:#d5d5d5}.MuiFab-root.Mui-focusVisible{box-shadow:0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12)}.MuiFab-root.Mui-disabled{color:rgba(0,0,0,.26);box-shadow:none;background-color:rgba(0,0,0,.12)}@media (hover:none){.MuiFab-root:hover{background-color:#e0e0e0}}.MuiFab-root:hover.Mui-disabled{background-color:rgba(0,0,0,.12)}.MuiFab-label{width:100%;display:inherit;align-items:inherit;justify-content:inherit}.MuiFab-primary{color:#fff;background-color:#e62511}.MuiFab-primary:hover{background-color:#c00}@media (hover:none){.MuiFab-primary:hover{background-color:#e62511}}.MuiFab-secondary{color:#fff;background-color:#ffa434}.MuiFab-secondary:hover{background-color:#c77500}@media (hover:none){.MuiFab-secondary:hover{background-color:#ffa434}}.MuiFab-extended{width:auto;height:48px;padding:0 16px;min-width:48px;min-height:auto;border-radius:24px}.MuiFab-extended.MuiFab-sizeSmall{width:auto;height:34px;padding:0 8px;min-width:34px;border-radius:17px}.MuiFab-extended.MuiFab-sizeMedium{width:auto;height:40px;padding:0 16px;min-width:40px;border-radius:20px}.MuiFab-colorInherit{color:inherit}.MuiFab-sizeSmall{width:40px;height:40px}.MuiFab-sizeMedium{width:48px;height:48px}.MuiAvatar-root{width:40px;height:40px;display:flex;overflow:hidden;position:relative;font-size:1.25rem;align-items:center;flex-shrink:0;font-family:Roboto,Helvetica,Arial,sans-serif;line-height:1;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border-radius:50%;justify-content:center}.MuiAvatar-colorDefault{color:#fafafa;background-color:#bdbdbd}.MuiAvatar-rounded{border-radius:4px}.MuiAvatar-square{border-radius:0}.MuiAvatar-img{color:transparent;width:100%;height:100%;-o-object-fit:cover;object-fit:cover;text-align:center;text-indent:10000px}.MuiAvatar-fallback{width:75%;height:75%}.MuiCardHeader-root{display:flex;padding:16px;align-items:center}.MuiCardHeader-avatar{flex:0 0 auto;margin-right:16px}.MuiCardHeader-action{flex:0 0 auto;align-self:flex-start;margin-top:-8px;margin-right:-8px}.MuiCardHeader-content{flex:1 1 auto}</style><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link as="script" rel="preload" href="/webpack-runtime-b97aab263c527f7d573e.js"/><link as="script" rel="preload" href="/framework-85aff51d15c28c7fbe5f.js"/><link as="script" rel="preload" href="/app-e7c24585acb41190afa5.js"/><link as="script" rel="preload" href="/29107295-140c057c8acedd8599ef.js"/><link as="script" rel="preload" href="/commons-50247ae5cfeb86bb4172.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-tsx-c2ff40c32f8bf64cb759.js"/><link as="fetch" rel="preload" href="/page-data/blog/Backend/backend-rd-routine-work/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1351831723.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/63159454.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><style data-emotion-css="1nbbj7q">body a{-webkit-text-decoration:none;text-decoration:none;}body a:visited,body a:link,body a:active{color:inherit;}</style><style data-emotion-css="15ffznb">.css-15ffznb{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;}.css-15ffznb .app-bar{background-color:#fff;color:#e62511;}@media (min-width:600px){.css-15ffznb .tool-bar{padding:24px;}}.css-15ffznb .title{margin-left:16px;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-basis:80%;-ms-flex-preferred-size:80%;flex-basis:80%;max-width:80%;}@media (min-width:600px){.css-15ffznb .title{-webkit-flex-basis:30%;-ms-flex-preferred-size:30%;flex-basis:30%;max-width:30%;}}@media (min-width:1280px){.css-15ffznb .title{-webkit-flex-basis:15%;-ms-flex-preferred-size:15%;flex-basis:15%;max-width:15%;}}.css-15ffznb .title__icon{width:100px;}.css-15ffznb .title__text{font-weight:bold;}.css-15ffznb .sidebar-icon{margin-right:16px;}@media (min-width:600px){.css-15ffznb .sidebar-icon{display:none;}}.css-15ffznb .nav-bar{display:none;}@media (min-width:600px){.css-15ffznb .nav-bar{display:block;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-basis:70%;-ms-flex-preferred-size:70%;flex-basis:70%;max-width:70%;}}@media (min-width:1280px){.css-15ffznb .nav-bar{display:block;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-basis:85%;-ms-flex-preferred-size:85%;flex-basis:85%;max-width:85%;}}</style><header class="css-15ffznb"><header class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary app-bar mui-fixed MuiPaper-elevation4"><div class="MuiToolbar-root MuiToolbar-regular tool-bar MuiToolbar-gutters" id="back-to-top-anchor"><button class="MuiButtonBase-root MuiIconButton-root sidebar-icon MuiIconButton-colorInherit MuiIconButton-edgeStart" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"></path></svg></span></button><style data-emotion-css="1xk69hk">.css-1xk69hk .drawer__container{padding-left:16px;min-width:80vw;}@media (min-width:600px){.css-1xk69hk .drawer__container{min-width:50vw;}}.css-1xk69hk .drawer__header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.css-1xk69hk .drawer__header__close-icon{position:absolute;left:18px;top:8px;color:#e62511;}.css-1xk69hk .drawer__header__logo-icon{font-size:3rem;color:#e62511;cursor:pointer;}</style><h6 class="MuiTypography-root title MuiTypography-h6"><a href="/"><svg class="MuiSvgIcon-root title__icon" focusable="false" viewBox="0 0 599 173" aria-hidden="true"><path d="M47 1.6C36.9 3.7 25.5 9.9 17.9 17.3 6.6 28.3 1.2 40.1.3 56.2c-.7 12.5.7 20.1 6 30.7 7.9 16.2 22.8 27.7 41 31.8 4 .9 7.4 1.7 7.6 1.9.2.2-2.7 5-6.4 10.6-7.6 11.4-9.9 17.4-9 23.1 1.2 8.2 7.1 15.6 13.7 17.2 2.6.7 3.5-.5 25.9-34.2 12.8-19.1 25-37 27.2-39.7 9.3-11.9 13.3-24.8 12.4-40.8-.6-12.1-3-19.8-8.9-29-5.7-9-13.9-16.2-23.3-20.9C73.3.4 60.5-1.3 47 1.6zm27.3 32.2c9.9 5.5 16.7 18.6 15.2 29.1-1.6 11.9-10.6 22.5-21.7 25.6-11 3.1-20.4.7-28.8-7.1-9.7-9.1-12.4-23.2-6.5-34.8 8-15.7 26.5-21.4 41.8-12.8zM127 20v13h20.1l-.2 61.9-.1 61.9 2.5 5.6c3.6 7.8 6.8 9.6 17.5 9.6h8.2V7h-48v13zM260.2 7.9c-5.3.9-9.2 3.7-11.4 8.2-1 1.9-5.6 13.5-10.2 25.9-4.7 12.4-8.8 23.3-9.2 24.4-.6 1.7-1.6 1.8-13.3 1.2-6.9-.4-13.8-.9-15.3-1.2-2.7-.5-2.8-.4-2.8 4.1 0 10.3 6 30.6 11.3 38.5l2.4 3.5-6.2 16c-3.4 8.8-8.3 21.6-10.9 28.5-2.7 6.9-5.1 13.1-5.3 13.8-.4.9 3.5 1.2 17.4 1.2h17.9l1.3-3.8c1.3-3.8 10.8-30.1 12.2-33.8.7-2 .9-2.1 7.1-.8 12 2.5 29.5 1 45-3.9l7.3-2.3 8.4 22.3 8.3 22.3h36.6l-3.8-9.8c-2.1-5.3-5.9-15.1-8.5-21.7-6.4-16.4-13.7-34.9-23.8-60.5-4.7-11.8-12.4-31.4-17.2-43.5-4.7-12.1-9.4-22.8-10.3-23.8-.9-1.1-2.9-2.5-4.3-3.3-3.2-1.6-16.8-2.6-22.7-1.5zm15.2 59.8c3 8.2 7.5 20.2 10 26.8 2.5 6.6 4.6 12.3 4.6 12.6 0 1.4-13.4 3.1-19.8 2.7-7-.5-15.9-3.8-18.6-6.7-1.5-1.6-.9-3.8 7.6-27.4 6.2-17.3 9.5-25.2 10-24.2.5.8 3.3 8.1 6.2 16.2zM361 89.9V172h6c3.3 0 7.5-.6 9.4-1.4 4.9-2.1 10.5-7.4 13.2-12.7 2.3-4.7 2.4-5.5 2.4-27.4V108h6.3c12.3-.1 38.3-2 42.2-3.1 19.7-5.4 32-20.6 33.9-41.9 2.5-27-12.1-48.8-35.6-53.1-2.9-.5-21.6-1.2-41.5-1.6L361 7.7v82.2zm66.5-51.5C444.2 45.6 445.6 68 430 76c-2.9 1.5-7.5 2.1-20.1 3-9 .5-16.7 1-17.1 1-.5 0-.8-10-.8-22.1V35.8l15.8.4c11.9.3 16.7.9 19.7 2.2zM485.7 8.7c-.4.3-.7 37.2-.7 82V172h6.5c9.8 0 15.7-3.5 21.6-12.8l2.9-4.6V108h6.3c13.5-.1 38.5-2 43.3-3.4C586.4 99 599 81.2 599 57.5c0-23-10.8-39.7-29.6-45.9-2.8-.9-10.9-2.1-18-2.6-14.8-1.1-64.7-1.3-65.7-.3zm62 28.6c3.5.8 7.6 2.5 9.6 4 6.9 5.2 9.6 16.1 6.2 24.4C559 76.5 549.4 80 524.8 80H516V36h12.8c7 0 15.5.6 18.9 1.3z"></path></svg><span class="title__text">BLOG</span></a></h6><style data-emotion-css="15fukhk">.css-15fukhk .nav-item{margin-right:8px;}</style><nav class="nav-bar css-15fukhk"><button class="MuiButtonBase-root MuiButton-root MuiButton-text nav-item MuiButton-colorInherit" tabindex="0" type="button" aria-controls="home" aria-haspopup="false"><span class="MuiButton-label">首頁</span></button><button class="MuiButtonBase-root MuiButton-root MuiButton-text nav-item MuiButton-colorInherit" tabindex="0" type="button" aria-controls="article" aria-haspopup="false"><span class="MuiButton-label">所有文章</span></button><button class="MuiButtonBase-root MuiButton-root MuiButton-text nav-item MuiButton-colorInherit" tabindex="0" type="button" aria-controls="categories" aria-haspopup="true"><span class="MuiButton-label">文章分類</span></button><button class="MuiButtonBase-root MuiButton-root MuiButton-text nav-item MuiButton-colorInherit" tabindex="0" type="button" aria-controls="tags" aria-haspopup="true"><span class="MuiButton-label">文章標籤</span></button></nav></div></header></header><div class="MuiContainer-root MuiContainer-maxWidthLg"><style data-emotion-css="1l7jy0t">.css-1l7jy0t{min-height:100vh;margin-top:80px;margin-bottom:80px;}@media (min-width:600px){.css-1l7jy0t{margin-top:160px;margin-bottom:160px;}}</style><div class="MuiBox-root jss1 css-1l7jy0t"><style data-emotion-css="1tv6n99">.css-1tv6n99{padding:20px;width:100%;max-width:700px;word-break:word-wrap;}</style><main class="css-1tv6n99"><div><h4 class="MuiTypography-root MuiTypography-h4">91APP Backend RD 的日常</h4><div class="MuiCardHeader-root"><div class="MuiCardHeader-avatar"><style data-emotion-css="vxk6ju">.css-vxk6ju{width:80px;height:80px;}</style><div class="MuiAvatar-root MuiAvatar-circle css-vxk6ju"><img alt="knight.jpg" src="/static/e031711a8a750dd987c90755c202139c/0f3a1/knight.jpg" class="MuiAvatar-img"/></div></div><div class="MuiCardHeader-content"><span class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock">Knight Huang</span><span class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock">2020/06/24</span></div></div><style data-emotion-css="yrzcmb">.css-yrzcmb{position:relative;padding-bottom:57%;overflow:hidden;box-shadow:0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);border-radius:10px;margin-bottom:30px;margin-top:20px;}.css-yrzcmb .iframe{position:absolute;top:0;left:0;width:100%;height:100%;}</style><div class="css-yrzcmb"><iframe src="//www.youtube.com/embed/7LHXaDPVMts" class="iframe" title="91APP Backend RD 的日常" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameBorder="0" allowfullscreen="" height="360"></iframe></div></div><hr/><style data-emotion-css="p9b11r">.css-p9b11r .gatsby-resp-image-background-image{margin-top:20px !important;margin-bottom:20px !important;}.css-p9b11r h1{font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:2.125rem;line-height:1.235;-webkit-letter-spacing:0.00735em;-moz-letter-spacing:0.00735em;-ms-letter-spacing:0.00735em;letter-spacing:0.00735em;}.css-p9b11r h2{font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:1.5rem;line-height:1.334;-webkit-letter-spacing:0em;-moz-letter-spacing:0em;-ms-letter-spacing:0em;letter-spacing:0em;}.css-p9b11r h3{font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:500;font-size:1.25rem;line-height:1.6;-webkit-letter-spacing:0.0075em;-moz-letter-spacing:0.0075em;-ms-letter-spacing:0.0075em;letter-spacing:0.0075em;}.css-p9b11r p{font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:0.875rem;line-height:1.43;-webkit-letter-spacing:0.01071em;-moz-letter-spacing:0.01071em;-ms-letter-spacing:0.01071em;letter-spacing:0.01071em;line-height:1.75rem;}.css-p9b11r img{max-width:700px;box-shadow:0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12) !important;border-radius:10px;}.css-p9b11r img:hover{box-shadow:0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12) !important;}.css-p9b11r code{color:#e62511;border:1px solid rgba(0,0,0,0.3);border-radius:3px;padding:3px;}.css-p9b11r pre{box-shadow:0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);}.css-p9b11r pre code{color:inherit;border:none;border-radius:unset;padding:unset;}.css-p9b11r blockquote{background-color:rgba(255,213,102,0.2);border-left-color:#ffd566;border-left-width:9px;border-left-style:solid;padding:10px;margin-bottom:30px;margin-top:20px;margin-left:0px;margin-right:-8px;}.css-p9b11r a{color:#2196f3;}.css-p9b11r a:hover{color:#64b5f6;}.css-p9b11r li a{color:#2196f3;}.css-p9b11r li a:hover{color:#64b5f6;}</style><article class="css-p9b11r"><p>本文跟大家分享的主題是 <code>Backend RD 的日常</code>，身為大型電子商務系統的後端工程師平時究竟都在做些什麼樣的工作呢？軟體開發工程師只要寫寫程式碼就好了嗎？我們是不是應該更宏觀的來看待整個產品生產的過程。</p>
+<!--more-->
+<p>今天的大綱分為三個部分，分別是：</p>
+<ul>
+<li>怎麼讓 Code Review 的效率提升？</li>
+<li>如何使程式碼更健康？(Unit Test)</li>
+<li>面臨多個環境的 Deploy 情境怎麼做？</li>
+</ul>
+<p>上述這三個環節是開發人員從開始提交程式碼異動一路到部署至正式環境的過程，其中都有一些我們逐步累積的經驗與成果要跟大家分享。以前的我們只要關心功能開發，專注在程式碼相關的問題，現在的我們則是從需求一路到交付、維運都與我們息息相關，密不可分。</p>
+<hr>
+<h1 id="怎麼讓-code-review-的效率提升？" style="position:relative;"><a href="#%E6%80%8E%E9%BA%BC%E8%AE%93-code-review-%E7%9A%84%E6%95%88%E7%8E%87%E6%8F%90%E5%8D%87%EF%BC%9F" aria-label="怎麼讓 code review 的效率提升？ permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>怎麼讓 Code Review 的效率提升？</h1>
+<p>首先我們來聊聊關於提交程式碼異動後會發生的事 - Code Review。程式碼審查通常會需要一些作業時間，怎麼讓審查的時間縮短、效率提升？</p>
+<h2 id="git-flow" style="position:relative;"><a href="#git-flow" aria-label="git flow permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Git Flow</h2>
+<p>在講到程式碼審查之前，先聊聊我們是如何在 Git 上作業的。一開始先簡要的說明我們所使用的 Git 分支策略 Git Flow。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/f3ecc3cf5b3902dbb1ff2356fe65e67e/33d1d/GitFlow.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 132.51533742331287%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAbCAIAAADzvTiPAAAACXBIWXMAAAsSAAALEgHS3X78AAAD9klEQVQ4y11VW3OiWBD2/7/tX9iHqZrdquwk2ZlJ3IoZYxKvRIyggIiCGBFQ7he5uR+ciU6mH6i2T9/767Z2fKc4jjebTZ7naZoGQQCJ6zqiKBZFkWWZZVn4gg/DEDrEpAbO8zxwURRpmgYN/FytVnkONj8cDsQY7sBAeatpCPPTGDYcx0FK3ohX8OT5NyZJ07WuwyN8ua5bG41G2+0WDxClFcFJGHqHQ0KUoihEzoZhREGw2Vt/v7yyLNN6eBgMBjWe52VZfjeG6/wQ28P+hbmz4Bt+TdN0HAe1ICm7IghpmoZhDQWQyLvdTlVVw9h5jjF5rZNsdV1XFGW5XMAGSUEHjk611NCkfq8HNxOWbf74MWZYzzWF6QN5Rv8fQa3WviLf9/Et3qn29vbWaDQ6nY5p7ybTCfUy3Gry5PUmig6II0nS09MTFJaKQjJHFaS7pTFELMu+aZtZi5ZYgepSiwXHMXeLhfzX58/Pz89qRe3GfZokyCVwf0kbmYgzEdz4gVrSvNBjooO7nPd4YSbw/HQ6DdFu3+fqDceyZFXt84JtWUgK/S8jQwPGUnMsU4JCi/kxofrN1UrFnEzTIJCKEbYoFG37leFYhrm9uUE5NcyDnUxg7MXBilsoIyk/Biz9b5oVZOwkQ2CpqGCUBD46j16s1+vSmGEYPDueq44lucNp5lZezCHJS4iW4MVEUDZAg0ZZtn2uGW+YEzho7EzTc0NFno5fLoIgdhzbi1xA6P7+vtNuIyDULOuXUSGyIAgY/YimB/0+pg2CozzL5wuxPrgCGB9AzSaaRGBzjgzcIm1DN+4ad9fX1427hiQBT25ZZxw2X+pJmqBzUCObA80Pac+EGTjqqbeQpI2+9VxrPHq09vZW17psC1lgHCiNYONDZHiVl0tw4n+0p5qbmbrV5WHv4nDIgtBrDL8hbaTT7XbJtsL4fAwwAzS9hE4caktVGIzTAtvjl5Iw6L4+Zlk5rSRJSEC07bTztSgMcTfKNrqOykpqb5Yds7nIu47Li3xrWvd8DwGwsCQaFuMcGd2eVCDBnNczWR7Nk8zutf7khfkLRZm6CYQBwlgvxAx8f6frWUXAz9nYdPbabLUeiOkxCwMfa3x7e4t9Ot0ZXMaJJH3qD3mOoygK96A0JiAZXzy5pu0ErqKsDGM/n4uXl5dX11ekKLJSODTafg+/APZwOCznDAiU2DZsz3F9P+y2G4P2J3o0/vLln+9fb7Dwp4ahWqs6Bj9rPt3t4v1ExlGo62vfD3qD7vcuZhaTq0pePzTsbFwd33JC/r79eGFZju3YqinjyCE7QAVtw9+AXFXxu/GJsjTUNwz26ey3SjhLEl6S/mh1inf5/54j0+Z4U0Z5AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="GitFlow"
+        title="GitFlow"
+        src="/static/f3ecc3cf5b3902dbb1ff2356fe65e67e/a6d36/GitFlow.png"
+        srcset="/static/f3ecc3cf5b3902dbb1ff2356fe65e67e/222b7/GitFlow.png 163w,
+/static/f3ecc3cf5b3902dbb1ff2356fe65e67e/ff46a/GitFlow.png 325w,
+/static/f3ecc3cf5b3902dbb1ff2356fe65e67e/a6d36/GitFlow.png 650w,
+/static/f3ecc3cf5b3902dbb1ff2356fe65e67e/e548f/GitFlow.png 975w,
+/static/f3ecc3cf5b3902dbb1ff2356fe65e67e/33d1d/GitFlow.png 1150w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>如果有在關注 Git 領域相關資訊的人，這張 Git Flow 分支的示意圖相信對你並不陌生，Git Flow 中常見的幾個主要分支分別是：</p>
+<ul>
+<li>master 分支我們用來部署在正式環境</li>
+<li>develop 分支用來部署在測試環境，並整合所有 feature 分支的異動</li>
+<li>feature 分支作為開發提交新的異動，是開發人員最常使用的分支</li>
+<li>release 分支在正式部署前的 Pre Production 環境部署測試，在準備部署到正式環境前會由 develop 分支來建立 release 分支</li>
+<li>hotfix 分支則用來快速修復正式環境的線上問題所使用</li>
+</ul>
+<p>以上就是 Git Flow 當中幾個重要的分支。</p>
+<h2 id="github-flow" style="position:relative;"><a href="#github-flow" aria-label="github flow permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>GitHub Flow</h2>
+<p>講完了 Git Flow 後，接著要介紹的是 GitHub Flow 的部分，其中幾個主要的階段如下圖所示：</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/0343cf3c175df2dd333d10397f0d12a6/161ec/GitHubFlow.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 37.423312883435585%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAABJ0AAASdAHeZh94AAAA6UlEQVQY01VPQU7EMAzs/x/EmSMnxErANgWxUdUWDu2SbpKmTuwEt5FC17Ki8diecaqYknahm5wFTCnFuGUJ2gs6kLMN/bTYNTBTZYrR1cC8BGW9MmBiujw154fn0ZEy/lutzL9I1U0LOxXpqiCkuHpiSU5IqT/Jr8dXBuMNjAsOsO71VfvdKf4vM6bDrcezs+g9sQ3Hssxf8hhLAwIxCM4vv5YBeKK9uQbKOjycmYpVEJEQs1wuGbhxVpefzZm7RHfOe2zLzjkhRNM0Whuup3E81zUCBPGObyfVdeLzQ0pZpPlt23YYBgZ/rDmXRDP5o2oAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="GitHubFlow"
+        title="GitHubFlow"
+        src="/static/0343cf3c175df2dd333d10397f0d12a6/a6d36/GitHubFlow.png"
+        srcset="/static/0343cf3c175df2dd333d10397f0d12a6/222b7/GitHubFlow.png 163w,
+/static/0343cf3c175df2dd333d10397f0d12a6/ff46a/GitHubFlow.png 325w,
+/static/0343cf3c175df2dd333d10397f0d12a6/a6d36/GitHubFlow.png 650w,
+/static/0343cf3c175df2dd333d10397f0d12a6/e548f/GitHubFlow.png 975w,
+/static/0343cf3c175df2dd333d10397f0d12a6/3c492/GitHubFlow.png 1300w,
+/static/0343cf3c175df2dd333d10397f0d12a6/161ec/GitHubFlow.png 1840w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<ul>
+<li>Create Branch 開發人員在開始異動前先由 develop 分支建立新的 feature 分支</li>
+<li>Commits 在 feature 分支進行開發並提交程式碼異動</li>
+<li>Pull Request 將異動提交合併請求</li>
+<li>Code Review 由審查人員進行程式碼審查並給予開發人員修正建議</li>
+<li>Merge 直到審查通過後才合併回到 develop 分支</li>
+</ul>
+<p>這就是 GitHub Flow 中主要的幾個步驟。</p>
+<h2 id="提交程式碼-pull-reqeust" style="position:relative;"><a href="#%E6%8F%90%E4%BA%A4%E7%A8%8B%E5%BC%8F%E7%A2%BC-pull-reqeust" aria-label="提交程式碼 pull reqeust permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>提交程式碼 (Pull Reqeust)</h2>
+<p>接下來要說明的是 Pull Request，我們平日的作業情境就是將 Git Flow 與 GitHub Flow 合並來運用：</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/1653eae2527e5f5d77aaa76818f12b38/1e2b7/PullRequest.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 57.668711656441715%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAABJ0AAASdAHeZh94AAAB8UlEQVQoz31SzYrUQBDOe4nCHgQfYp9CwYMgyIriSRCP/u0+gDdhQVbE2+Cgy85kJ5lJMkl3fjrpzn8y6XSSzthJHNmDWtDp6u76qurLV9J+tL7vxaoZK4pi8P9t/WgVpWmaStOhbduu6/ww8oPgEPUXGOe8Hc1GPsZYagZju90ujEJaVVPZP8XHzIMjYFNklmVJkjSMiRuJNW2WIABMTVF9QjzPnmBEdSLDn3zRFKU1pVUSu9pGg6bpBBgCIOmavtVlACxRtigrnDQ5389Pv57dO/lw98ny40whe5dQBwJD03VtIboVkYKzSCoZP9SYeFme2iKhVx6/Do9fBU9vPft8/92Xh6cnd14cPY8enBF9vbWXWpaTMAwhhIL2APagi5FrwI3twF3FVmZq5/tvLz+9vf3o/dHj2ZuLGeitgOVZ6liQEKQYMiGEjbpIy8UixL7jg7IsSJwQPPDsmnZz/lO/uOJtN9EGlrVWlDjGdgAEfzfACCEJGx7x3fn8u/grWVF2fJK8vyHP4EQkioC/3aqrlSLe07Ic2o4QgZZ+JV8KGUpKOe8nkKg5lD1kiYWSCCvKQjc1Qbig9QBuaFPTnPPuP1PFe54laceaui5u3kti5Xm+Xm9+tzp+W+QyVa4v563rHGZl2C1gydfXIn6cwP4XV2+YvT/4KK4AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="PullRequest"
+        title="PullRequest"
+        src="/static/1653eae2527e5f5d77aaa76818f12b38/a6d36/PullRequest.png"
+        srcset="/static/1653eae2527e5f5d77aaa76818f12b38/222b7/PullRequest.png 163w,
+/static/1653eae2527e5f5d77aaa76818f12b38/ff46a/PullRequest.png 325w,
+/static/1653eae2527e5f5d77aaa76818f12b38/a6d36/PullRequest.png 650w,
+/static/1653eae2527e5f5d77aaa76818f12b38/e548f/PullRequest.png 975w,
+/static/1653eae2527e5f5d77aaa76818f12b38/3c492/PullRequest.png 1300w,
+/static/1653eae2527e5f5d77aaa76818f12b38/1e2b7/PullRequest.png 1483w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>首先 origin 是開發人員自己的儲存庫，而 upstream 則是公司所擁有的儲存庫。所有的開發人員都是基於 upstream 的內容來建立新的分支進行開發，開發完成後再透過 Pull Request 來提交新的異動內容，整個過程都是基於 Git Flow 及 GitHub Flow 來運行，這當中的 Pull Request 則是開發人員在開發完成後的必經之路。</p>
+<h2 id="程式碼審查-code-review" style="position:relative;"><a href="#%E7%A8%8B%E5%BC%8F%E7%A2%BC%E5%AF%A9%E6%9F%A5-code-review" aria-label="程式碼審查 code review permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>程式碼審查 (Code Review)</h2>
+<p>Pull Request 之後最重要的關卡就是程式碼審查了。審查人員會針對開發人員本次所異動的內容進行審查，來決定是否允許本次的異動合併到 upstream 當中，審查人員會審視程式碼的寫作風格、程式邏輯及商業邏輯等並給予開發人員回饋及建議。</p>
+<p>如果有需要修正，開發人員則需根據建議進行調整後再行提交，直到沒有問題的程式碼才允許合併進到 upstream 儲存庫當中。</p>
+<p>Code Review 的過程也許很快，也可能會很漫長。開發人員如果一次交付太大量的異動內容也會讓整個審查的時間拉長，持續的小增量疊代交付會是個不錯的方式。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/0a49da412f74bf0f41c808205fca910d/7575b/CodeReview.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50.920245398773%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAABJ0AAASdAHeZh94AAABv0lEQVQoz2P4DwR//wKJj7t2Pa2t/X7p0vtz5y5UV788dAgo+A8shQswQKRfTp58VVf3x507ENEPly9vUle/t3Ahfv0MQPzt0qVz/PxfTpwACfz58+/3byD9dOfOFYKCX+7dw6MfpPlOVNRVExMQ798/BPn//yY9vXMVFSABsHFw8AcM/v37xwBkPnJyfpyRiSz999cvIHk2O+eAsyvUZpiJ/2AMkM3Pnj3dMHP660ePwAEHUgY0FOTs1++2z568Y0Lb46cvIL6BiH/69GnCpCkzZs158uQJw7xJXR56kptWLgar+A02G+TDo4cOtrVVt3bWnzh2FGLhnz8g8d37D8up6Krq2+zcvY9h66qNVbFRi+bOf/L08b0XP3Ze+Lbt7Odzj/4fWL8oJzYkIzJgUW/t8Vs/91z6tvHU55ef/rfM3eOaPqmwZXZe90aGTZP3T01d1d85Y/nqlV++/X7/5d/bz3++fv/Xvm5XcGxYfLhz/qSm99/+fvjy9+UHkLsmrzkbWr2ud876nEkHGZ4/fX740OEjhw8/efoEHhJAr9978frKgd3Xd2+5/uQBJJAg5IcPHzfuOrph98nLNx8AAIuH9zBQKv4VAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="CodeReview"
+        title="CodeReview"
+        src="/static/0a49da412f74bf0f41c808205fca910d/a6d36/CodeReview.png"
+        srcset="/static/0a49da412f74bf0f41c808205fca910d/222b7/CodeReview.png 163w,
+/static/0a49da412f74bf0f41c808205fca910d/ff46a/CodeReview.png 325w,
+/static/0a49da412f74bf0f41c808205fca910d/a6d36/CodeReview.png 650w,
+/static/0a49da412f74bf0f41c808205fca910d/e548f/CodeReview.png 975w,
+/static/0a49da412f74bf0f41c808205fca910d/3c492/CodeReview.png 1300w,
+/static/0a49da412f74bf0f41c808205fca910d/7575b/CodeReview.png 1608w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2 id="linter-參與程式碼審查" style="position:relative;"><a href="#linter-%E5%8F%83%E8%88%87%E7%A8%8B%E5%BC%8F%E7%A2%BC%E5%AF%A9%E6%9F%A5" aria-label="linter 參與程式碼審查 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Linter 參與程式碼審查</h2>
+<p>接著我們來談談 Linter，它可以怎麼幫助我們。為了讓程式碼審查的效率與品質提升，在 Linter 上我們會建立許多規則來針對程式碼的異動進行檢查，並且在開發人員發出 Pull Request 後經由 Webhook 驅動 Linter 來執行程式碼檢查。</p>
+<p>檢查的內容可能 MVC 站台 Controller 上的 Action 是否有正確的使用指定的 Attribute 或者是 SQL 命令的撰寫方式是否合乎規範來進行審查。
+透過 Linter 我們可以達到：</p>
+<ul>
+<li>自動化</li>
+<li>提升程式碼品質</li>
+<li>改善效率</li>
+<li>降低人為錯誤</li>
+<li>經驗、知識數位化</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a6d047da5091e133ec8b6fba5a27a29c/85bc8/LinterCodeReview.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 47.852760736196316%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAABJ0AAASdAHeZh94AAAB9ElEQVQoz22QzWsTQRjGxz9F6MWDIAVPHjxUerC04slDjfVQCyqkohXBFiJJ8SSSz4opBaM5VKiQJhHrIZKKJrubYkja5sPdZqNm1ySTTYLbbJLN7oyzG9AeMjDvzLzze5535gVY1zHGPfa7aLfX/f5esdir1YRwOGuzCdEouUImMHIAMqVgMHfufGs7YmYQRogsfzju09RUYm5OHwzMNBohbu983DsFpE0XOTQ5uteqGqSmGVFVo+PjXy0WUztKvH/mbGHitCYXsIaOa9zB5mOl8cugzYINmn4NQDUe/+c4NBp6AQoAcfWhSaskiqlQbst28quhsbHE/PxJ8f/K7L3ZfokhO1038DYUmPXbmtonzpqpp5eX6UdLugEgHRkYXy4flXh1MAB3LTPib3HoVKlU7HaH2+V0vAjVYJNkOh3F43M9f7aSTFJDBtbrE5cmJy9fKRYLwHpthqESP6rHqRKKUeyazxsIvHn7LpLlmgyPD3Klpw9uWRduBp2ODN89FHAgsndxduXqwpNAmALOOxvrG69S6cNmF3/bP3K7Pb6XfpfHm8mXWx28m6/cuL9omb5gXV36KfXbCt6Ks9cd723e7bVIHnz5nEyn07IskydpmibBBizkJAhV1eg2lDt0JhOPfcjyrG52WFG6O7upcIwpC/AvPMXvVBWZm4kAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="LinterCodeReview"
+        title="LinterCodeReview"
+        src="/static/a6d047da5091e133ec8b6fba5a27a29c/a6d36/LinterCodeReview.png"
+        srcset="/static/a6d047da5091e133ec8b6fba5a27a29c/222b7/LinterCodeReview.png 163w,
+/static/a6d047da5091e133ec8b6fba5a27a29c/ff46a/LinterCodeReview.png 325w,
+/static/a6d047da5091e133ec8b6fba5a27a29c/a6d36/LinterCodeReview.png 650w,
+/static/a6d047da5091e133ec8b6fba5a27a29c/e548f/LinterCodeReview.png 975w,
+/static/a6d047da5091e133ec8b6fba5a27a29c/3c492/LinterCodeReview.png 1300w,
+/static/a6d047da5091e133ec8b6fba5a27a29c/85bc8/LinterCodeReview.png 1875w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>在程式碼審查的過程中，有了 Linter 的幫助開發人員可以更迅速的得到回饋進行調整，常見的問題在交付初期就可以被檢驗出來，對開發人員甚至對審查人員來說都有很大的幫助。</p>
+<p>每一次的往返都是時間成本，對開發人員是，對審核人員也是。</p>
+<p>這一個段落討論的是從開發到提交程式碼的過程，從建立分支到提交合併請求，在程式碼審查階段可以透過 Linter 建立對應的檢查規則來提示程式碼撰寫時應該注意的事項，或提醒不洽當的寫作方式。開發人員可以快速的得到回饋，避免時間上不必要的浪費。</p>
+<hr>
+<h1 id="如何使程式碼更健康？" style="position:relative;"><a href="#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%A8%8B%E5%BC%8F%E7%A2%BC%E6%9B%B4%E5%81%A5%E5%BA%B7%EF%BC%9F" aria-label="如何使程式碼更健康？ permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>如何使程式碼更健康？</h1>
+<p>第二個部分要講的是單元測試的部分，測試的目的不外乎就是要確保系統本身的運作正常，那如何使程式碼更健康？</p>
+<h2 id="複雜的系統" style="position:relative;"><a href="#%E8%A4%87%E9%9B%9C%E7%9A%84%E7%B3%BB%E7%B5%B1" aria-label="複雜的系統 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>複雜的系統</h2>
+<p>我們的系統只有一套程式碼 Single Code Base，但是我的面對的是如下圖所示的複雜使用情境。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/d4e63e42914306a0326433d0abd5a323/a303f/SingleCodeBase.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 55.828220858895705%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAABJ0AAASdAHeZh94AAACHklEQVQoz21SzWsTURB/4B8iePAgPXvRk3goKHqrt1ALyUEPYiO5FO3BiA1KsEopKtKLiEWt0aYoRmsL+dIkzYdJmuyGpO2G5pNNN+lu9r19+6b7klAUHIZhZni/+c3HQ8AYA7DUcrhaYlLYeM/ePgZJ4CEzoVNi7SxQHf4VxE3qK6y/Aq0Lwyqpjdrty5GpC/DcZVqxUtwPzAm+e1ALjTioCqY2AIeWD8aRdA7BMxsbFox/77muVm5dgoVp3sp+uPHDU/I/APEjf6A3D8sBpfTNchC8vCOdRVvnEdhPMYqHfbLgJ+21h1UHbRsKEX1YeAe4wcFKtp3/XE2tgJJBUEl2p042r5wgHzz9aIgUcvhPUs+mjb0dXNzuh34SUdAjm3grinNppqoMtw6EL71yANTaYGajD/jQ4iO5DBHzenDdSERpq0GKeT0WJqUiEQt6PIozCbotgqxSqpq4x2fWGnvRh/aI+3qvWhqOjIPB+pN5ZW1ttD++f9MyZDOdnnCKk3fN3M4gyVDSY396Bs2dRvHZazzVbstu96rDUXA6oVzmVzQUYH3ToptZ9F+0/Rp36C98I3Dae3NxDC2MocR9G6fSNGNpadflkr1ekDuM1oTMSiXvB9C01VB5wlWdnCXJ4giMO834/HTs0Q2tKY16lGUjFoN63aI11Wwi/CaXWAZDss6GhV1Davz9SRj8X3ie4nqnFuy2fjPaO04eI44AZDwykEA6XkEAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="SingleCodeBase"
+        title="SingleCodeBase"
+        src="/static/d4e63e42914306a0326433d0abd5a323/a6d36/SingleCodeBase.png"
+        srcset="/static/d4e63e42914306a0326433d0abd5a323/222b7/SingleCodeBase.png 163w,
+/static/d4e63e42914306a0326433d0abd5a323/ff46a/SingleCodeBase.png 325w,
+/static/d4e63e42914306a0326433d0abd5a323/a6d36/SingleCodeBase.png 650w,
+/static/d4e63e42914306a0326433d0abd5a323/e548f/SingleCodeBase.png 975w,
+/static/d4e63e42914306a0326433d0abd5a323/3c492/SingleCodeBase.png 1300w,
+/static/d4e63e42914306a0326433d0abd5a323/a303f/SingleCodeBase.png 1733w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>上述的這些還僅僅只是正式環境上的數據，其他還有測試環境跟 Pre Production 環境，在這樣的條件之下怎麼確保系統的品質及正確性，是我們很重要的課題。</p>
+<h2 id="真的不考慮寫-unit-test-嗎？" style="position:relative;"><a href="#%E7%9C%9F%E7%9A%84%E4%B8%8D%E8%80%83%E6%85%AE%E5%AF%AB-unit-test-%E5%97%8E%EF%BC%9F" aria-label="真的不考慮寫 unit test 嗎？ permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>真的不考慮寫 Unit Test 嗎？</h2>
+<p>沒有測試過的東西可以交付嗎？為了提升產品的品質，有很多種方法，投入大量的測試人力資源也可以達到一樣的效果，但這樣做有辦法變"快"嗎？</p>
+<p>開發人員自己寫的程式有自己測試嗎？你是怎麼測試自己寫的程式碼的呢？</p>
+<ul>
+<li>手動測試：異動、建置 (Full)、執行、驗證</li>
+<li>單元測試：異動、建置 (Partial)、驗證</li>
+</ul>
+<p>一般來說最直覺得測試，就是透過萬能的雙手，一步一腳印的操作來驗證，但是也許一個案例就需要花費你 3 ~ 5 分鐘的時間，這樣你時間夠用嗎？</p>
+<p>單元測試可以只針對局部的方法進行驗證，僅需要較短的時間就能驗證成果，這樣真的不考慮撰寫單元測試嗎？</p>
+<h2 id="測試金字塔-test-pyramid" style="position:relative;"><a href="#%E6%B8%AC%E8%A9%A6%E9%87%91%E5%AD%97%E5%A1%94-test-pyramid" aria-label="測試金字塔 test pyramid permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>測試金字塔 (Test Pyramid)</h2>
+<p>講到單元測試就不免俗的要提到測試金字塔來說說：</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 466px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/f6c930f2d4ae8a6068696ace34e9566e/fc1a1/testPyramid.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.760736196319016%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA4lAAAOJQEPVgSRAAACCUlEQVQoz3VSy4oaURBtbTNjHp3HJGYmCTIRIjLJF4jgJtkE3JiNzA/4Ae6yyR+EbN1oBBeS1awCoqgLEd2JTxBfIIqI73dj212putMNvYgFp+veulWnqrqK4zjuKeIB4h3iJaeTUChkJB2JRD7FYrFbOlcqFWYzmUyamxnxEXGBeE2G94g3iLeIczJYLBbmCQAsuNvt/pnNZkev12tRExk8Ho9GaEBcIh4hHnNqhXS5UrMxaTabPOlMJvN1Op3CZrOBTqfzW03E6xqhpK+4/8gzjTAQCBhU29lgMKj1ej3I5/MSkaZSqc/0kM1m+VOEWvBzjbDdbrMfFI/Hf4iiCK1WSyqVSsflcgnVarWIT4xstVpxPM+frJARYjvsEgwGb/r9vkhVrddrZbfbwXw+l2RZhkKh8F3X+mlCo9H4ULsMh8O/4/EYyuWyVCwWAQejoJbr9TqgfRsOhz+Qn8/nM50kdLvdT+gQjUZvsRqgyaJWUCukF4sFTCYT6XA4QC6XuyPfdDpNhBY9Ea0KLwjCC1ovp9MpYHU9bAfw/8kqMZEyvd/vlSOKoiiQTCa/EYHNZrvUE17TUtvtdraUtVrtF9yLhALYpoI2aDQaVJVCg0E50mc0GrUdDodAe2g2m6/UFeQurFYrGa/9fv+X7XYrsggs4r4QJkCggah2Okvkl0gkflKsy+UijrN/BU5PhKFol2wAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="testPyramid"
+        title="testPyramid"
+        src="/static/f6c930f2d4ae8a6068696ace34e9566e/fc1a1/testPyramid.png"
+        srcset="/static/f6c930f2d4ae8a6068696ace34e9566e/222b7/testPyramid.png 163w,
+/static/f6c930f2d4ae8a6068696ace34e9566e/ff46a/testPyramid.png 325w,
+/static/f6c930f2d4ae8a6068696ace34e9566e/fc1a1/testPyramid.png 466w"
+        sizes="(max-width: 466px) 100vw, 466px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>測試金字塔的構成由下至上分別是：</p>
+<ul>
+<li>Unit Test 針對類別的方法進行測試</li>
+<li>Service Test 整合多個類別進行服務之間的互動測試</li>
+<li>UI Test 與使用者一樣從系統介面進行操作來測試</li>
+</ul>
+<p>測試速度越靠近金字塔頂端越慢，越靠近頂端關係到使用者介面及多個的服務則越複雜。橫軸是測試數量分佈的多寡，越底端發生的錯誤可以越快定義問題與解決問題。靠近頂端的問題，則牽涉的範圍較廣要確切的找到問題發生的位置就需要花費更多的時間。一般來說以金字塔的形狀來配置上述三種測試類型的數量會是比較好的方式。</p>
+<p>另外相反的模式則是像冰淇淋甜筒般的配置測試：</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/ff6cdac5c1c6d93b11a382096a5c05f8/2ec65/software-testing-icecream-cone-antipattern.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 123.31288343558282%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAZABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAEDAgX/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAesqYNMqOcotDAn/xAAbEAEAAgIDAAAAAAAAAAAAAAABABECEBMhQf/aAAgBAQABBQK1lzkqOPdQxAW5ga91/8QAFREBAQAAAAAAAAAAAAAAAAAAICH/2gAIAQMBAT8Bg//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EABsQAAEEAwAAAAAAAAAAAAAAAAABEBExICFx/9oACAEBAAY/Ai1NnS2jL//EAB8QAAIBBAIDAAAAAAAAAAAAAAABERAhMWFBcVHB8P/aAAgBAQABPyFuTLXQn4Dgu2KvxofECwonsXhLk+NU9xU//9oADAMBAAIAAwAAABDT4kD/xAAYEQEBAAMAAAAAAAAAAAAAAAABABARMf/aAAgBAwEBPxAdOTGP/8QAFxEBAQEBAAAAAAAAAAAAAAAAARARIf/aAAgBAgEBPxBe5En/xAAdEAEBAAICAwEAAAAAAAAAAAABEQAhMUEQUdFx/9oACAEBAAE/EEUWoCk+42xT2/cIyX0NUwrCnkrvKRm/AA2uQ7g5FXKPLdLsHpyrYbw0I9+Ti/r4/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="software testing icecream cone antipattern"
+        title="software testing icecream cone antipattern"
+        src="/static/ff6cdac5c1c6d93b11a382096a5c05f8/6aca1/software-testing-icecream-cone-antipattern.jpg"
+        srcset="/static/ff6cdac5c1c6d93b11a382096a5c05f8/d2f63/software-testing-icecream-cone-antipattern.jpg 163w,
+/static/ff6cdac5c1c6d93b11a382096a5c05f8/c989d/software-testing-icecream-cone-antipattern.jpg 325w,
+/static/ff6cdac5c1c6d93b11a382096a5c05f8/6aca1/software-testing-icecream-cone-antipattern.jpg 650w,
+/static/ff6cdac5c1c6d93b11a382096a5c05f8/7c09c/software-testing-icecream-cone-antipattern.jpg 975w,
+/static/ff6cdac5c1c6d93b11a382096a5c05f8/2ec65/software-testing-icecream-cone-antipattern.jpg 979w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>先大量的手動測試，其次是自動化測試，再來是整合測試，最後是較少量的單元測試，在這樣的測試配置下要花費更多的時間來測試及解決問題。</p>
+<h2 id="unit-test-衡量指標" style="position:relative;"><a href="#unit-test-%E8%A1%A1%E9%87%8F%E6%8C%87%E6%A8%99" aria-label="unit test 衡量指標 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Unit Test 衡量指標</h2>
+<p>如果要透過單元測試來提升產品的品質，那怎麼衡量將會是首先要考慮的。</p>
+<p>究竟我們現在單元測試做的程度如何？是變好了？還是變差了？為了量化所以我們要定義衡量好與壞指標是什麼？</p>
+<ul>
+<li>測試案例數量：透過常見的三正一反或邊界值測試來增加測試案例，數量越多越好。</li>
+<li>測試通過率：用通過率做為指標！？ 出現測試失敗的程式碼可以交付嗎？？？</li>
+<li>測試含蓋率：程式碼有被單元測試所執行過的範圍。</li>
+</ul>
+<p>以測試含蓋率為指標是我們認為較能呈現出程式碼異動與單元測試之間的關連性，一但程式碼有調整，涵蓋率就有可能隨之下降。透過測試涵蓋率的觀察，我們可以知道程式碼是否充分的受到單元測試的保護及其成長的趨勢究竟是上升還下降。但是特別要提醒的是即使測試涵蓋率 100% 也不代表產品 100% 沒問題，這只是我們用來衡量趨勢用的指標。</p>
+<h2 id="code-coverage-tool" style="position:relative;"><a href="#code-coverage-tool" aria-label="code coverage tool permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Code Coverage Tool</h2>
+<p>既然我們要以測試涵蓋率為指標，這邊就列舉了幾個測試涵蓋率的分析工具：</p>
+<ul>
+<li>Visual Studio：但是需要 Enterprise 等級以上才可以使用</li>
+<li>dotCover：包含在 ReSharper 之下</li>
+<li>AxoCover：目前在 Visual Studio Marketplace 上的說明僅支援到 Visual Studio 2017</li>
+<li>OpenCover：Open Source</li>
+<li>Coverlet：跨平台且支援 .Net Core</li>
+</ul>
+<p>透過這些工具可以讓我們獲得程式碼的測試涵蓋率，以及知道程式碼的那些段落是沒有受到單元測試保護的部分。</p>
+<h2 id="核心方法-core-method" style="position:relative;"><a href="#%E6%A0%B8%E5%BF%83%E6%96%B9%E6%B3%95-core-method" aria-label="核心方法 core method permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>核心方法 (Core Method)</h2>
+<p>系統運行的監控可以幫助我們了解線上系統是否有無異狀，那程式碼是不是健康的狀態有被關心嗎？接下來要說明的是我們怎麼樣監測測試涵蓋率。</p>
+<p>由於程式碼的數量龐大我們沒有辦法投入所有的資源來撰寫單元測試，所以將有限的資源集中在幾個重要的商業邏輯上。我們列舉了系統當中重要的核心方法，這些方法是相對於產品當中最核心的功能，特別針對些方法來監測其測試涵蓋率的變化，並加入我們的持續整合流程當中，針對提交的程式碼進行驗證，一但有程式碼合併後便會開始執行測試涵蓋率分析。幾個主要的步驟如下：</p>
+<ul>
+<li>系統建置</li>
+<li>測試涵蓋率分析</li>
+<li>核心方法的測試涵蓋率檢核及記錄</li>
+<li>如果有測試涵蓋率下降則通知團隊</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/4d0b15bf2399e2853ae24560fa18484e/84a78/CoreMethod.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 41.717791411042946%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAABJ0AAASdAHeZh94AAABVUlEQVQY02M4sH9fWXnF69cv/4PBpStXjx8/DmS8ePly5ZL5r548AbL//vv3HxtgyGtZZBuQsWDLhTOP/h8+sKc8xa2pufXUw/8rtp+ua+9qWT7/7tP3v/8CVSL0/wObBSQZZm68UNq3dufJe0D+sZ2LZ5ZbXzq9H8i+euV6c3df2cLVJy4+O3rrD1Dxnz+/IdqA5vz5DRJh+PLl85Nnz3//+gUx9fu3L3//AiX+f/78+cWL518/vP/95+/33/9fvfk4Z03dw5dXgFLLDx+zzozde3I/w3/8AOzAn7/+T1nWXtYR9+zFO6AlBdmN+uKsM3pTGP6BAbJ/INwfP39mb69ZcmrZg+f/D17/dfXm6aMnDkHUvL/7ZE1n25f3z7DYDNH8/vP7iH158fuKn7z49uM3SPTPn78QBUDq1z+Qm3Bq/vbty/Sjc6Yfnf3n5y+4ILIiIAEAiiumw/J7GR8AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="CoreMethod"
+        title="CoreMethod"
+        src="/static/4d0b15bf2399e2853ae24560fa18484e/a6d36/CoreMethod.png"
+        srcset="/static/4d0b15bf2399e2853ae24560fa18484e/222b7/CoreMethod.png 163w,
+/static/4d0b15bf2399e2853ae24560fa18484e/ff46a/CoreMethod.png 325w,
+/static/4d0b15bf2399e2853ae24560fa18484e/a6d36/CoreMethod.png 650w,
+/static/4d0b15bf2399e2853ae24560fa18484e/e548f/CoreMethod.png 975w,
+/static/4d0b15bf2399e2853ae24560fa18484e/3c492/CoreMethod.png 1300w,
+/static/4d0b15bf2399e2853ae24560fa18484e/84a78/CoreMethod.png 1832w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>透過這個檢核機制來確保這些核心方法都有受到單元測試的保護。一但有測試涵蓋率未達標準的方法出現，將透過 Slack 的訊息來主動通知團隊進行維護，如圖所示：</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/6aeeb07f7fbc793841a7469df685cb6c/4d08a/SlackNotify.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 45.39877300613497%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAABJ0AAASdAHeZh94AAABmUlEQVQoz12R2Y7UMBBF+x8QZHM223E6e2ez4yR2lg4dDRpGDIOQEM9IaMQr/8B38KWYZpAGpKtSPVTdWzp1+PLw8funz71cqoYFxxSR2PbQSx1opvvKdLSrVGMAz7T9/3T48fXx5+O3G9q/effhvO3zeV+3XcxbkpeIJDhMSJSGUQZcrAPPAL7p+JYDLee6/AJ4ynlPC3m5EXKR8zatl3m9yGW7vXu/nPe39w+3d/dJXkEcQghN4OmW+8fooNk+1IEKYmLuelGzvmXjIBfaqbqOcuXDpPqG9UJOXVOFcRFnpyQ6QogPugORYW9xTsXMuGC9pFyoaWWkrhDTysdpWl+r3Yr2jI9NkWASExy4HnxavqQFm879OGenph8nNarmGJfDtLSdKCpatiOvT3EYqGsVPM26nv03OaNypozXlPNB5QvKh6YbKJe0bctTUZdVXxdHEmjgGW3NgcS0B5JDtvhZG0apwotIpOSh0MMRRhhBqIQRAg40nr9Kt6FvuQ0KUVqSuAij3PUD9VuF1PiNVIH1n2T5xr9//gXnpF+p/unyKgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="SlackNotify"
+        title="SlackNotify"
+        src="/static/6aeeb07f7fbc793841a7469df685cb6c/a6d36/SlackNotify.png"
+        srcset="/static/6aeeb07f7fbc793841a7469df685cb6c/222b7/SlackNotify.png 163w,
+/static/6aeeb07f7fbc793841a7469df685cb6c/ff46a/SlackNotify.png 325w,
+/static/6aeeb07f7fbc793841a7469df685cb6c/a6d36/SlackNotify.png 650w,
+/static/6aeeb07f7fbc793841a7469df685cb6c/4d08a/SlackNotify.png 709w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>訊息當中包含了</p>
+<ul>
+<li>Repository Name：儲存庫名稱</li>
+<li>Project Name：專案名稱，此專案下未通過的數量有 6 筆</li>
+<li>Method Level Coverage：Update 方法的測試涵蓋率為 33% 低於目標值 100% 及其所屬團隊為 g11n</li>
+<li>Namespace Level Coverage：命名空間層級的測試涵蓋率，一但 Namespace 下的程式碼有異動未加上測試就會反映在涵蓋率上</li>
+<li>Project Level Coverage：專案層級的測試涵蓋率</li>
+</ul>
+<h2 id="code-coverage-log" style="position:relative;"><a href="#code-coverage-log" aria-label="code coverage log permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Code Coverage Log</h2>
+<p>透過涵蓋率的歷史記錄我們可以清楚的知道各方法的測試涵蓋率變化情形，在這邊列舉兩個核心方法測試涵蓋率的歷史記錄：</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/22a7b16d1dd87fd16909c53307fceabe/b67f3/CodeCoverageLog.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 61.963190184049076%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAABJ0AAASdAHeZh94AAABPElEQVQoz5VSXW+DMAzk//9I9lB1Q0UwQUKwHX/sAmu19mHTLqfIEDu2L+6YWZ9QVeNyeX/r+3Vd0zT1ff8xfOz7bmYPJ9illA6WuxMR9oiTQcx72dpFIjCYCd7+A82HqAXDCnfzEIpKYbs6K3zVA7QIO4wHcMQaKLmbpmnbCq6gail5zkLjJ89bmpa87lkis4OJPO0wIideFhJDMHXjOKaUWm4sFCHspRzlm6c1mEIr6LUqV/RR11Vr/S57GIZ5nu2EhKZkUk1ai00gfG75pGNPqwvb0UILfsnsOQVU0PgTrWdc0KSH5hCNtGVAUvHf8aR2lYofVgSKtX7F/hFsxztqJkVj5sb2wDkSLzhH4565VhaWTELSWOQEPLBjvJja+QPwx8/7kJxAOXrQjxWxLAue43q93m43JHwR7AtEXcCTMoVUeQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="CodeCoverageLog"
+        title="CodeCoverageLog"
+        src="/static/22a7b16d1dd87fd16909c53307fceabe/a6d36/CodeCoverageLog.png"
+        srcset="/static/22a7b16d1dd87fd16909c53307fceabe/222b7/CodeCoverageLog.png 163w,
+/static/22a7b16d1dd87fd16909c53307fceabe/ff46a/CodeCoverageLog.png 325w,
+/static/22a7b16d1dd87fd16909c53307fceabe/a6d36/CodeCoverageLog.png 650w,
+/static/22a7b16d1dd87fd16909c53307fceabe/e548f/CodeCoverageLog.png 975w,
+/static/22a7b16d1dd87fd16909c53307fceabe/3c492/CodeCoverageLog.png 1300w,
+/static/22a7b16d1dd87fd16909c53307fceabe/b67f3/CodeCoverageLog.png 1338w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>X 軸是時間以週為單位，而 Y 軸則呈現的是測試涵蓋率的百分比，以紅色線條 Method 2 的例子來說，在開發初期就已經加入核心方法的清單，所以涵蓋率由 0% 開始上升到 81% 隨著後續的程式碼異動導致涵蓋的下降，再經由收到通知的團隊後補上單元測試來提高測試涵蓋率，藉由涵蓋率歷史紀錄的歷程可以幫助我們了解該方法變化趨勢為何。</p>
+<p>當然更好的做法應該是採用測試驅動開發 ( TDD )，讓程式碼在開發當下就充分的受到測試的保護，持續的維持測試涵蓋率在 100% 的狀態，但這就很仰賴開發人員個人的功力。</p>
+<p>這個段落說明的是，我們推動單元測試的過程無法全面性的加上測試，所以把目標放在重要的核心方法上，並加以監測這些方法的測試涵蓋率變化。</p>
+<hr>
+<h1 id="面臨多個環境的-deploy-情境怎麼做？" style="position:relative;"><a href="#%E9%9D%A2%E8%87%A8%E5%A4%9A%E5%80%8B%E7%92%B0%E5%A2%83%E7%9A%84-deploy-%E6%83%85%E5%A2%83%E6%80%8E%E9%BA%BC%E5%81%9A%EF%BC%9F" aria-label="面臨多個環境的 deploy 情境怎麼做？ permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>面臨多個環境的 Deploy 情境怎麼做？</h1>
+<p>講完單元測試後，第三個部分要提到的是我們的部署流程的演化過程。</p>
+<h2 id="多市場的部署" style="position:relative;"><a href="#%E5%A4%9A%E5%B8%82%E5%A0%B4%E7%9A%84%E9%83%A8%E7%BD%B2" aria-label="多市場的部署 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>多市場的部署</h2>
+<p>首先先說明我們在部署上遇到了什麼樣的問題。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/8c13c0e9f04325f8a0db8ef9823a323d/913b9/MultipleMarket.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 49.69325153374233%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAABJ0AAASdAHeZh94AAACCUlEQVQozzWS22sTQRjF9/8SfPRVEKFIEBu0IRYlKlJqNRWVCgVBBG+gKIU+RCFWvLQppkgUSbWYptFKW68bc9nmurvZndv3zYyzKQ7zMGf4HQ7fmbGQ+4IHEujO9mYu96rZrGktEJnSKIAICJ2OW9v12z2vvL6Wzy97Xk9JztkAIbQED7XWhJLx1Onzk1Nzj+56Xpd2eqTubLx5ufoiU+8EBqhs12Lx+MXpy8+eziEIpRUgWDA0g4CJSxNj52KJ2H7HsZvvV/9mF+5dn70znSbEN0Cn002eSRw7eWjy1EHOSGRBYYEIUUkj/lTt7OLzQmHR7bf1cHXdQdv1ODKUEbC59S37euFjcYUxIiMzWApCwXzBPCmp1lxriSLkxGVBH31bhQ0UhAc9IQKlDGC2BD6IeDOzFAFEhZEwcL9W1j0TKxmASQNEgkDYbo1Wf0C/1Wo1yqU1ErgK6dDyvzDO+YV0eip9LZdbopRq5mvmVr983vmw7FdtAzQqleOJxJWZ2XeFFTWcgpuZzTuZkzHEk/Hk2dH4yL567Zf6/lZvPHk8c/Vmajz0XQM4zeaR0ZGjY4dTJw5QElk4MEuIECQaUSqXbj24kZm/3es6e4X9brS2ftpUUKWUkcVPxYfz9/NLmb22OXDLTGt6M71LhQPqgzI/JJLRDXU0a6NEEwJSCMkDFmUKFBy5RPYPoRQJRHa+jDwAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="MultipleMarket"
+        title="MultipleMarket"
+        src="/static/8c13c0e9f04325f8a0db8ef9823a323d/a6d36/MultipleMarket.png"
+        srcset="/static/8c13c0e9f04325f8a0db8ef9823a323d/222b7/MultipleMarket.png 163w,
+/static/8c13c0e9f04325f8a0db8ef9823a323d/ff46a/MultipleMarket.png 325w,
+/static/8c13c0e9f04325f8a0db8ef9823a323d/a6d36/MultipleMarket.png 650w,
+/static/8c13c0e9f04325f8a0db8ef9823a323d/e548f/MultipleMarket.png 975w,
+/static/8c13c0e9f04325f8a0db8ef9823a323d/3c492/MultipleMarket.png 1300w,
+/static/8c13c0e9f04325f8a0db8ef9823a323d/913b9/MultipleMarket.png 1822w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>一開始我們只有一個市場，位於東北亞的區域開始營運，我們建立了屬於這個市場的 Jenkins 服務來進行系統部署。</p>
+<p>幾年後在東南亞成立第二個市場，我們複製第一個市場的經驗來建構環境，也配置了另一座 Jenkins 服務來部署系統，但這意味著我們要維護 Jenkins 服務的成本提高了。</p>
+<p>又過了一陣子東北亞出現了第三個市場，但是分屬在不同的環境底下，導致做法有別於第一個市場，又由於環境配置的問題，部署流程略有差異存在。</p>
+<p>不久後在東南亞也開設了第四個市場，又針對這個市場建置了專屬的部署流程，在這樣的因果關係之下，使得我們的系統在部署上遇到了瓶頸，圖上還僅只是正式環境上的呈現，另外還有多達十幾座的測試環境也都有部署上的需求，Jenkins Job 的數量跟維護成本也隨之升高。</p>
+<h2 id="持續整合、交付-ci--cd" style="position:relative;"><a href="#%E6%8C%81%E7%BA%8C%E6%95%B4%E5%90%88%E3%80%81%E4%BA%A4%E4%BB%98-ci--cd" aria-label="持續整合、交付 ci  cd permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>持續整合、交付 (CI / CD)</h2>
+<p>我們透過 Jenkins Job 來實現持續整合及交付，初期的做法是一條龍的把 CI 跟 CD 放在同一個 Job 當中一次完成整個流程，但隨著系統的擴展變化我們遇到了維護上的困難。因此，我們調整了部署策略來改善維護上的問題，讓整合與交付分開來運行來實現 Single Build, Multiple Deploy. 並以 Artifacts Management 做為整合與部署之間的介面，如此一來我可以更彈性的來設計整個整合部署的流程。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/12edd36682e5dda6430463ef81adba78/e548f/CI_CD.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 85.2760736196319%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAABJ0AAASdAHeZh94AAADbklEQVQ4y6VR709bVRg+RZdM/wC/6Qc/+lGSKYkOjYSxCHZjC3QBWVtaZB1d3KQF9oPW1t7+uKW1ZZT5aUsYMxGnqJcRdCjQ3rZXJpR1DKesW6VwubeU3kt/0MLtPZ65ZJlx33zznOfNeZ73fc/JOSB2+TJtt6/h+JrTmXS51vseMdPXt4rj604njeOPxQ23G4kpt5t2OlHlmtW6MjwMaKsV9vcLXq/g8fys1Y6q1Qvd3fd6e6Fv4M65s7sezy+PxLZZne5qS8vEyZNIKXm90OPhfD6w6nCgPRzwLV24cFUuhz7f2In2H7Wn0g5HsLPz7vnzIyoVcq+r1eQnZya12rBOBwcHiy7X5qVLgHY4xIsX4cDAus06JJdTev3XanVY3xUzmRYNhjSOX1Mow3r9sFKJpiAr/pkFHYCumUbNcQwrYFjGYtmx2e53d1Ed2qTR+Bic2bzrcCAx3NHBGo2kRvOgp2fHbs9g2LbZzHi9ILW0xM5Ms6Sf8c9woVCGolIkibDxD1i//4mYpah0KMT4/WwgwExNoUYA/0cALhFn5oJMhGIiYS46y0bCbIRCYObDhS2+wG+yJMEEiHSQSAWJDZLgQwRDjrEzo3xsESQsbaJRJpiacgbZ8mlpvle2bTgmmJuLXXX02JerX3QWKgGUPpd4DySrQaYGLL8LirVlsBqk2l4DrLEF2ltLVsW4svqGonqi9UBIUwddH4mfNqRuDNFYM6wBf76/56s3JdOVkpE3JNcrJBP7y+BhwCtfAesmBcRV9LljQ7J3YL+GPFH7zYdV0N3OdTVOW3W3bLVQCr6rKLt9ULJzRHKlXJI7IhksL0PilvpVwPQ2QbsC2pWTqgNDDfuJ41ULp6RZcxOB1/3U1zxhkX/b8/Z8zfPXysH3FWBkH7jyOghUSuAhwMtfBonPdTnz8SzWmsdaN03ygk1VtKpjhsY14mByRkZgh8bxerr9pZx0T+boC8WGven6vYXGF/MfgKTuLZDP8NxfMT7xkF95mF2NcyuxHEP//utUoH8fP16VuFlP3zz6R/CHQmKZvx9FL5x9sIiYW45mU+yz/1kQSvHFyeio5rfRjxP3povFnWcUiSJASyyVnkZJEJCzXdilqLnZW/Nb2TyqLAm7Ykn4F8QS+M84EXEmsxW9vRCZn0OMcjrNP7Gejr8Be/7PHVjWvxsAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="CI CD"
+        title="CI CD"
+        src="/static/12edd36682e5dda6430463ef81adba78/a6d36/CI_CD.png"
+        srcset="/static/12edd36682e5dda6430463ef81adba78/222b7/CI_CD.png 163w,
+/static/12edd36682e5dda6430463ef81adba78/ff46a/CI_CD.png 325w,
+/static/12edd36682e5dda6430463ef81adba78/a6d36/CI_CD.png 650w,
+/static/12edd36682e5dda6430463ef81adba78/e548f/CI_CD.png 975w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>接下來我們就將整個部署流程分成建置與部署兩個部分來說明。</p>
+<h2 id="jenkins---build" style="position:relative;"><a href="#jenkins---build" aria-label="jenkins   build permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Jenkins - Build</h2>
+<p>首先是建置的部分，在我們的 CI / CD 流程當中引用了一些新的機制，其中包含 Jenkins 的分散式建置來提升效率，整個部署流程當中系統建置、測試與驗證是最占用資源的項目，因此透過分散式的建置以分散原本只有單一座 Jenkins 伺服器的負擔，也只需要維護同一份 Job 組態設定。Configuration Management 主要用於多環境的組態管理，用來解決每個環境的不同設定值的問題，在建置完成後我們將進行測試及驗證，驗證單元測試是否有失敗的測試案例或是核心方法的測試涵蓋率是否有低於標準，未通過驗證將會中斷我們的建置流程。Artifacts Management 則用來將我們建置好的應用程式打包並上傳進行存放，好做為部署時期的來源資料以解決多環境跨區域的問題。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/25f20b4392afafd8ef065e298db82f84/b4aee/Build.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50.306748466257666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAABJ0AAASdAHeZh94AAABg0lEQVQoz4WQzy/EQBTH+//4E9wcJeLo5CQRFzcJN0JENuKAhPgVISEkfuw6bMhmbfzc7CoW9WtbVkq7qxZtZzrVTqdj2iY42e/h5b3vzGfee8PZCCDLoJT6hLBYFu8Pd9aAGTqhWPL0fFeuFiOHRUPXlccb7GEuNTe5OdLn2i4v2TKk2fn5yZbGy/0NaMC85JQ0T6tW+yc6k3vTDAPIMxEpbvekYw3CwSqXWIsvTc16jvukYQPRLwvOdHX3drQpV4KsU2DTQz7VFWtVFZXB0PYsh6pHQ1K86VXMcAACwzRpqNsXR/nwAdD580uMcWS6rivLLyRcKhq7XKmc8jkAEceKB0ncSsTf3o2s6GJCFQ1A9j6lxI/w3+WjHFkIAMtxnAAeHF2sq2/OHBfCU5IVsfIR9aH/i8EktpxvH1hZ3wv+07CsnFB60z5/hvwfpmpFOz691t51lp9IpbGF8SKfJLS2uL+F7weIKOymE8M2gjWbB7AfrhfdAwAWLgrnZzwhfs3O3+qyJWpVRpE1AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Build"
+        title="Build"
+        src="/static/25f20b4392afafd8ef065e298db82f84/a6d36/Build.png"
+        srcset="/static/25f20b4392afafd8ef065e298db82f84/222b7/Build.png 163w,
+/static/25f20b4392afafd8ef065e298db82f84/ff46a/Build.png 325w,
+/static/25f20b4392afafd8ef065e298db82f84/a6d36/Build.png 650w,
+/static/25f20b4392afafd8ef065e298db82f84/e548f/Build.png 975w,
+/static/25f20b4392afafd8ef065e298db82f84/3c492/Build.png 1300w,
+/static/25f20b4392afafd8ef065e298db82f84/b4aee/Build.png 1823w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2 id="jenkins---deploy" style="position:relative;"><a href="#jenkins---deploy" aria-label="jenkins   deploy permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Jenkins - Deploy</h2>
+<p>接著說明的是部署階段，由於建置階段已經將應用程式打包並上傳至 Arctfiacts Management，接下來的 Jenkins Job 只需要將應用程式部署到指定環境的伺服器即可。透過 Artifacts Management 來做為建置與部署之間的介面，在跨區域、跨市場的部署上就相對單純多了，不同環境有著一致的運行方式，維護的成本也下降了。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a35799edd1c4df22d52b05fc1a9b7e10/71d2f/Deploy.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 61.963190184049076%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAABJ0AAASdAHeZh94AAABgElEQVQoz5VRUUvCUBjdj+qtfkJEYQ9FWeR7UllQRIQlFPQgUUFEL4aJGWhlSIhRhBoIaU0fotTpNitHU7e8zjl3b9OBWaLY4XL5zvnu4Tv3XkyUJJ7LowYgVDYBgLsrZ/oVVyXUBIJIOV1neDSm1BjudQdPdjiaUggHqm+sWEUo5fPujwx47HtZOq7osgzFiiIjiiIndTrDwor12BZ9CmGHxnWDVksEA0ovnBRO779IFgp83jw4bJmecpvXKjxH5ZAjwEfSkCJTmjHNomlmqL/HYdnA4mn6xh8EADTywXryDEktzS/vGk0iAAovleWKVNMt1qO5Vf2sftxlM2NiWWCyWdUgw9qql0pUiflk+CJAvyFX5UScyBe4sgAw1ALVzBZKNFNs0KbuD8dgHa3m50zFhwtqnHZoO5lipQfin2Y1Bc+zoYsDv33r4z3xJ2pHs1z7TxK/TNr7bjd7Y9fbsK52Obl2jqFf4ucTSc9ojgqqb9/tnVUkEsnHcESSUQd8A+telEoqkHh6AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Deploy"
+        title="Deploy"
+        src="/static/a35799edd1c4df22d52b05fc1a9b7e10/a6d36/Deploy.png"
+        srcset="/static/a35799edd1c4df22d52b05fc1a9b7e10/222b7/Deploy.png 163w,
+/static/a35799edd1c4df22d52b05fc1a9b7e10/ff46a/Deploy.png 325w,
+/static/a35799edd1c4df22d52b05fc1a9b7e10/a6d36/Deploy.png 650w,
+/static/a35799edd1c4df22d52b05fc1a9b7e10/e548f/Deploy.png 975w,
+/static/a35799edd1c4df22d52b05fc1a9b7e10/3c492/Deploy.png 1300w,
+/static/a35799edd1c4df22d52b05fc1a9b7e10/71d2f/Deploy.png 1485w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>我們可以更有彈性的來設計整合及部署流程，進而優化部署流程如，藍綠部署、金絲雀部署等。這個段落說明的是我們整個部署的架構演化過程，從一個市場成長到四個市場，並引入新的機制來改善這過程中所遇到的困境。</p>
+<hr>
+<h1 id="總結" style="position:relative;"><a href="#%E7%B8%BD%E7%B5%90" aria-label="總結 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>總結</h1>
+<p>這次提到的幾個主題分別是：</p>
+<ul>
+<li>Code Review 透過 Linter 可以加快整個審查的過程</li>
+<li>Unit Test 透的監測機制來確保程式碼的品質</li>
+<li>
+<p>面臨複雜的多環境 Deploy 流程改善</p>
+<ul>
+<li>Jenkins Distributed Builds</li>
+<li>Configuration Management</li>
+<li>Artifacts Management</li>
+</ul>
+</li>
+</ul>
+<p>這不一定是最好的方法
+但是持續的藉由回饋來改善將會一直的疊代下去...</p>
+<p>身為 Backend RD 我們所關注的問題不再只是程式碼本身，而是整個產品從開始到交付的過程怎麼更快、更好、更快速的因應市場的改變。</p>
+<hr>
+<h1 id="參考資料" style="position:relative;"><a href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99" aria-label="參考資料 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>參考資料</h1>
+<ul>
+<li><a href="https://nvie.com/posts/a-successful-git-branching-model/">A successful Git branching model</a></li>
+<li><a href="https://guides.github.com/introduction/flow/">Understanding the GitHub flow</a></li>
+<li><a href="https://martinfowler.com/articles/practical-test-pyramid.html">The Practical Test Pyramid</a></li>
+<li><a href="https://alisterbscott.com/kb/testing-pyramids/">Testing Pyramids &#x26; Ice-Cream Cones</a></li>
+<li><a href="https://wiki.jenkins.io/display/JENKINS/Distributed+builds">Jenkins Distributed builds</a></li>
+<li><a href="https://rickhw.github.io/2018/07/08/DevOps/Artifacts-Management/">Artifacts Management</a></li>
+</ul>
+<style class="grvsc-styles">
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line > * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: ' ';
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting > .grvsc-code > .grvsc-line::before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+</style></article><style data-emotion-css="g2swwf">.css-g2swwf{box-shadow:0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);position:absolute;left:calc(50% + 150px);top:20%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;border-radius:0.25rem;padding:2rem;margin-top:32px;overflow:auto;}@media (max-width:1279.95px){.css-g2swwf{display:none;}}.css-g2swwf a,.css-g2swwf ul,.css-g2swwf ol,.css-g2swwf li{-webkit-text-decoration:none;text-decoration:none;list-style-type:none;}.css-g2swwf a:visited,.css-g2swwf ul:visited,.css-g2swwf ol:visited,.css-g2swwf li:visited,.css-g2swwf a:link,.css-g2swwf ul:link,.css-g2swwf ol:link,.css-g2swwf li:link,.css-g2swwf a:active,.css-g2swwf ul:active,.css-g2swwf ol:active,.css-g2swwf li:active{color:inherit;}.css-g2swwf li{margin-top:8px;margin-bottom:8px;}.css-g2swwf ul{padding-inline-start:16px;border-left:1px dashed rgba(0,0,0,0.3);margin-left:20px;}.css-g2swwf a{display:inline-block;padding:8px;font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:500;font-size:0.875rem;line-height:1.75;-webkit-letter-spacing:0.02857em;-moz-letter-spacing:0.02857em;-ms-letter-spacing:0.02857em;letter-spacing:0.02857em;text-transform:uppercase;text-transform:inherit;}.css-g2swwf a:hover{-webkit-text-decoration:none;text-decoration:none;background-color:rgba(0,0,0,0.04);}.css-g2swwf:first-of-type > ul{border-left:none;margin-left:0;padding-inline-start:0;}</style><nav class="css-g2swwf"><ul>
+<li>
+<p><a href="#%E6%80%8E%E9%BA%BC%E8%AE%93-code-review-%E7%9A%84%E6%95%88%E7%8E%87%E6%8F%90%E5%8D%87%EF%BC%9F">怎麼讓 Code Review 的效率提升？</a></p>
+<ul>
+<li><a href="#git-flow">Git Flow</a></li>
+<li><a href="#github-flow">GitHub Flow</a></li>
+<li><a href="#%E6%8F%90%E4%BA%A4%E7%A8%8B%E5%BC%8F%E7%A2%BC-pull-reqeust">提交程式碼 (Pull Reqeust)</a></li>
+<li><a href="#%E7%A8%8B%E5%BC%8F%E7%A2%BC%E5%AF%A9%E6%9F%A5-code-review">程式碼審查 (Code Review)</a></li>
+<li><a href="#linter-%E5%8F%83%E8%88%87%E7%A8%8B%E5%BC%8F%E7%A2%BC%E5%AF%A9%E6%9F%A5">Linter 參與程式碼審查</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%A8%8B%E5%BC%8F%E7%A2%BC%E6%9B%B4%E5%81%A5%E5%BA%B7%EF%BC%9F">如何使程式碼更健康？</a></p>
+<ul>
+<li><a href="#%E8%A4%87%E9%9B%9C%E7%9A%84%E7%B3%BB%E7%B5%B1">複雜的系統</a></li>
+<li><a href="#%E7%9C%9F%E7%9A%84%E4%B8%8D%E8%80%83%E6%85%AE%E5%AF%AB-unit-test-%E5%97%8E%EF%BC%9F">真的不考慮寫 Unit Test 嗎？</a></li>
+<li><a href="#%E6%B8%AC%E8%A9%A6%E9%87%91%E5%AD%97%E5%A1%94-test-pyramid">測試金字塔 (Test Pyramid)</a></li>
+<li><a href="#unit-test-%E8%A1%A1%E9%87%8F%E6%8C%87%E6%A8%99">Unit Test 衡量指標</a></li>
+<li><a href="#code-coverage-tool">Code Coverage Tool</a></li>
+<li><a href="#%E6%A0%B8%E5%BF%83%E6%96%B9%E6%B3%95-core-method">核心方法 (Core Method)</a></li>
+<li><a href="#code-coverage-log">Code Coverage Log</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#%E9%9D%A2%E8%87%A8%E5%A4%9A%E5%80%8B%E7%92%B0%E5%A2%83%E7%9A%84-deploy-%E6%83%85%E5%A2%83%E6%80%8E%E9%BA%BC%E5%81%9A%EF%BC%9F">面臨多個環境的 Deploy 情境怎麼做？</a></p>
+<ul>
+<li><a href="#%E5%A4%9A%E5%B8%82%E5%A0%B4%E7%9A%84%E9%83%A8%E7%BD%B2">多市場的部署</a></li>
+<li><a href="#%E6%8C%81%E7%BA%8C%E6%95%B4%E5%90%88%E3%80%81%E4%BA%A4%E4%BB%98-ci--cd">持續整合、交付 (CI / CD)</a></li>
+<li><a href="#jenkins---build">Jenkins - Build</a></li>
+<li><a href="#jenkins---deploy">Jenkins - Deploy</a></li>
+</ul>
+</li>
+<li><a href="#%E7%B8%BD%E7%B5%90">總結</a></li>
+<li><a href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99">參考資料</a></li>
+</ul></nav></main></div></div><style data-emotion-css="ymdklo">.css-ymdklo .info{background-color:#e62511;height:150px;color:#fff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;box-shadow:0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);}.css-ymdklo .info__left-side{background-color:#fff;color:#e62511;border-bottom-right-radius:200px;width:30%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.css-ymdklo .info__right-side{width:70%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.css-ymdklo .bottom-info{background-color:#e62511;color:#fff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding-bottom:3px;padding-top:5px;padding-bottom:5px;border-top:1px solid #cc0000;}.css-ymdklo .bottom-info__text{font-weight:bold;}</style><footer class="css-ymdklo"><section class="info"><aside class="info__left-side"></aside><aside class="info__right-side"><style data-emotion-css="hhdesf">.css-hhdesf{color:inherit;}</style><button class="MuiButtonBase-root MuiIconButton-root css-hhdesf" tabindex="0" type="button"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z"></path></svg></span></button><button class="MuiButtonBase-root MuiIconButton-root css-hhdesf" tabindex="0" type="button"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span></button><button class="MuiButtonBase-root MuiIconButton-root css-hhdesf" tabindex="0" type="button"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"></path></svg></span></button><button class="MuiButtonBase-root MuiIconButton-root css-hhdesf" tabindex="0" type="button"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg></span></button></aside></section><section class="bottom-info"><p class="MuiTypography-root bottom-info__text MuiTypography-body1 MuiTypography-alignCenter">Copyright © <!-- -->2020<!-- --> 91APP, Inc. 版權所有</p></section></footer><style data-emotion-css="98706x">.css-98706x{position:fixed;bottom:80px;right:16px;}</style><div role="presentation" style="transform:scale(0);visibility:hidden" class="css-98706x"><button class="MuiButtonBase-root MuiFab-root MuiFab-sizeSmall MuiFab-primary" tabindex="0" type="button" aria-label="scroll back to top"><span class="MuiFab-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg></span></button></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/Backend/backend-rd-routine-work";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-76b692be697c511cc408.js"],"app":["/app-e7c24585acb41190afa5.js"],"component---src-templates-article-template-tsx":["/component---src-templates-article-template-tsx-1c28f3c74dd3fdfd6517.js"],"component---src-templates-blog-template-tsx":["/component---src-templates-blog-template-tsx-c2ff40c32f8bf64cb759.js"],"component---src-templates-categories-template-tsx":["/component---src-templates-categories-template-tsx-9d8c6d5b0125ec100015.js"],"component---src-templates-landing-page-template-index-tsx":["/component---src-templates-landing-page-template-index-tsx-8b707a80ef65334529fd.js"],"component---src-templates-tags-template-tsx":["/component---src-templates-tags-template-tsx-45c456dd35430c071736.js"]};/*]]>*/</script><script src="/polyfill-76b692be697c511cc408.js" nomodule=""></script><script src="/component---src-templates-blog-template-tsx-c2ff40c32f8bf64cb759.js" async=""></script><script src="/commons-50247ae5cfeb86bb4172.js" async=""></script><script src="/29107295-140c057c8acedd8599ef.js" async=""></script><script src="/app-e7c24585acb41190afa5.js" async=""></script><script src="/framework-85aff51d15c28c7fbe5f.js" async=""></script><script src="/webpack-runtime-b97aab263c527f7d573e.js" async=""></script></body></html>
