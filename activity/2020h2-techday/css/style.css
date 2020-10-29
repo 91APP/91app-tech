@@ -1189,6 +1189,32 @@ h1, h2, h3, h4, h5,
   border-color: #E72410 !important;
   color: #fff; }
 
+/* questionnaire info */
+.questionnaire-info {
+  background: #e72410; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #e72410 20%, #9d08b9 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #e72410 20%,#9d08b9 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #e72410 20%,#9d08b9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e72410', endColorstr='#9d08b9',GradientType=1 ); 
+  min-height: 100vh;
+}
+
+.questionnaire-info__block {
+  height: 375px;
+}
+
+.questionnaire-info__block__title {
+  height: 100px;
+}
+
+.questionnaire-info__block__content {
+  height: 175px;
+}
+
+.questionnaire-info__block__action {
+  height: 100px;
+}
+
 /*PRELOADING------------ */
 #overlayer {
   width: 100%;
