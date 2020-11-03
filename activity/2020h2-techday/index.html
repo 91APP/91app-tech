@@ -1,541 +1,760 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>91APP TechDay 2020</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<head>
+		<title>91APP TechDay 2020</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <meta property="og:url"         content="https://www.91app.tech/activity/2020h2-techday/" />
-    <meta property="og:type"        content="article" />
-    <meta property="og:title"       content="91APP TechDay 2020" />
-    <meta property="og:description" content="91APP 致力於提供零售品牌完整的全通路新零售解決方案，協助品牌在最短的時間、用最低的成本快速進軍新零售市場。在電商的快速發展下，每年的11月11日「光棍節」有了新的意義，並晉升成為全球的購物狂歡盛會。在面臨雙11巨額流量的挑戰下，91APP 研發團隊是如何協助店家建立攻防戰，並打造能支撐千萬等級流量的電商系統呢？就讓 91APP TechDay 為您一一解答！" />
-    <meta property="og:image"       content="https://www.91app.tech/activity/2020h2-techday/images/fb_cover.jpg" />
+		<meta property="og:url" content="https://www.91app.tech/activity/2020h2-techday/" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="91APP TechDay 2020" />
+		<meta
+			property="og:description"
+			content="91APP 致力於提供零售品牌完整的全通路新零售解決方案，協助品牌在最短的時間、用最低的成本快速進軍新零售市場。在電商的快速發展下，每年的11月11日「光棍節」有了新的意義，並晉升成為全球的購物狂歡盛會。在面臨雙11巨額流量的挑戰下，91APP 研發團隊是如何協助店家建立攻防戰，並打造能支撐千萬等級流量的電商系統呢？就讓 91APP TechDay 為您一一解答！"
+		/>
+		<meta property="og:image" content="https://www.91app.tech/activity/2020h2-techday/images/fb_cover.jpg" />
 
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Muli:300,400,700,900" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Muli:300,400,700,900" rel="stylesheet" />
+		<link
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			rel="stylesheet"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="fonts/icomoon/style.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/jquery-ui.css" />
+		<link rel="stylesheet" href="css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="css/owl.theme.default.min.css" />
+		<link rel="stylesheet" href="css/owl.theme.default.min.css" />
+		<link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+		<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+		<link rel="stylesheet" href="css/aos.css" />
+		<link rel="stylesheet" href="css/style.css" />
 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MVLHWXS');</script>
-    <!-- End Google Tag Manager -->
+		<!-- Google Tag Manager -->
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, 'script', 'dataLayer', 'GTM-MVLHWXS');
+		</script>
+		<!-- End Google Tag Manager -->
+	</head>
+	<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-MVLHWXS"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript>
+		<!-- End Google Tag Manager (noscript) -->
 
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVLHWXS"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+		<div id="overlayer"></div>
+		<div class="loader">
+			<div class="spinner-border text-primary" role="status">
+				<span class="sr-only">Loading...</span>
+			</div>
+		</div>
 
-  <div id="overlayer"></div>
-  <div class="loader">
-    <div class="spinner-border text-primary" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
-  </div>
+		<div class="site-wrap">
+			<div class="site-mobile-menu site-navbar-target">
+				<div class="site-mobile-menu-header">
+					<div class="site-mobile-menu-close mt-3">
+						<span class="icon-close2 js-menu-toggle"></span>
+					</div>
+				</div>
+				<div class="site-mobile-menu-body"></div>
+			</div>
 
+			<header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+				<div class="container-fluid">
+					<div class="d-flex align-items-center">
+						<div class="site-logo"><a href="index.html" class="text-uppercase">91APP TechDay</a></div>
+						<div>
+							<nav class="site-navigation position-relative text-right" role="navigation">
+								<ul class="site-menu main-menu js-clone-nav mr-auto d-none d-xl-block">
+									<li><a href="#info-section" class="nav-link">資訊</a></li>
+									<li><a href="#process-section" class="nav-link">議程</a></li>
+									<li><a href="#speaker-section" class="nav-link">講師</a></li>
+									<li><a href="#sp-section" class="nav-link">合作夥伴</a></li>
+									<li><a href="#rule-section" class="nav-link">守則</a></li>
+									<li><a href="https://www.91app.tech" class="nav-link">部落格</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="ml-auto">
+							<nav class="site-navigation position-relative text-right" role="navigation">
+								<ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-xl-block">
+									<li class="cta">
+										<a href="https://91app.kktix.cc/events/techday2020" class="nav-link"
+											><span class="border bg-danger rounded text-white border-danger"
+												>立即報名</span
+											></a
+										>
+									</li>
+								</ul>
+							</nav>
+							<a href="#" class="d-inline-block d-xl-none site-menu-toggle js-menu-toggle float-right"
+								><span class="icon-menu h3"></span
+							></a>
+						</div>
+					</div>
+				</div>
+			</header>
 
-  <div class="site-wrap">
+			<div class="intro-section custom-owl-carousel" id="home-section">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-5 mr-auto">
+							<div class="owl-carousel slide-one-item-alt-text">
+								<div class="slide-text">
+									<h1>91APP TechDay 2020</h1>
+									<p class="mb-5">
+										在電商的快速發展下，<br />
+										每年的11月11日有了新的意義，<br />
+										並晉升成為全球的購物狂歡盛會。<br />
+										在面臨雙11巨額流量的挑戰下，<br />
+										91APP 研發團隊是如何協助店家建立攻防戰，<br />
+										並打造能支撐千萬等級流量的電商系統呢？<br />
+										就讓 91APP TechDay 為您一一解答！
+									</p>
+									<p>
+										<a
+											href="https://91app.kktix.cc/events/techday2020"
+											target="_blank"
+											class="btn btn-outline-light py-3 px-5 btn-order"
+											>立即報名</a
+										>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 ml-auto">
+							<div class="owl-carousel slide-one-item-alt">
+								<img src="images/banner_001.jpg" alt="Image" class="img-fluid" />
+								<img src="images/banner_007.jpg" alt="Image" class="img-fluid" />
+								<img src="images/banner_003.jpg" alt="Image" class="img-fluid" />
+								<img src="images/banner_004.jpg" alt="Image" class="img-fluid" />
+								<img src="images/banner_005.jpg" alt="Image" class="img-fluid" />
+								<img src="images/banner_008.jpg" alt="Image" class="img-fluid" />
+								<img src="images/banner_006.jpg" alt="Image" class="img-fluid" />
+							</div>
 
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
+							<div class="owl-custom-direction">
+								<a href="#" class="custom-prev"><span class="icon-keyboard_arrow_left"></span></a>
+								<a href="#" class="custom-next"><span class="icon-keyboard_arrow_right"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
+			<div class="site-section section-1" id="info-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 mb-5" data-aos="fade-up">
+							<div class="image-absolute-box">
+								<img
+									src="images/image_001.jpg"
+									alt="線上、線下，同步分享精彩演講內容！"
+									class="img-fluid"
+								/>
+							</div>
+						</div>
 
-    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+						<div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+							<div class="mb-5">
+								<h2 class="section-title">活動資訊</h2>
+								<p class="mb-5">11月28日（六）下午，和 91APP 來一場電商 Tech 之旅吧！</p>
+								<ul class="ul-check list-unstyled success">
+									<li>活動內容：雙軌制，總共 6 場演講。</li>
+									<li>
+										日期與時間：
+										<p>・11/28 14:00 ~ 17:30</p>
+									</li>
+									<li>
+										地點：WeTalk 維特空間<br /><a
+											href="https://maps.google.com/maps?ll=25.0501343,121.5170607&&q=loc:25.0501343,121.5170607"
+											target="_blank"
+											>臺北市大同區承德路一段17號4樓</a
+										>
+									</li>
+									<li>費用：免費！<br />（請選擇現場票或線上票，請勿重複報名。）</li>
+								</ul>
+								<div class="box">
+									<h5>
+										<svg
+											width="1em"
+											height="1em"
+											viewBox="0 0 16 16"
+											class="bi bi-arrow-right-circle"
+											fill="currentColor"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+											/>
+											<path
+												fill-rule="evenodd"
+												d="M4 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5A.5.5 0 0 0 4 8z"
+											/>
+										</svg>
+										現場參加，領取好禮
+									</h5>
+									<p>參加現場活動並填寫問卷，即可獲得現場小禮品。</p>
+									<p class="mb-0">
+										<a class="btn btn-info" href="https://91app.kktix.cc/events/techday2020"
+											>立即報名</a
+										>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-      <div class="container-fluid">
-        <div class="d-flex align-items-center">
-          <div class="site-logo"><a href="index.html" class="text-uppercase">91APP TechDay</a></div>
-          <div>
-            <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-xl-block">
-                <li><a href="#info-section" class="nav-link">資訊</a></li>
-                <li><a href="#process-section" class="nav-link">議程</a></li>
-                <li><a href="#speaker-section" class="nav-link">講師</a></li>
-                <li><a href="#sp-section" class="nav-link">合作夥伴</a></li>
-                <li><a href="#rule-section" class="nav-link">守則</a></li>
-                <li><a href="https://www.91app.tech" class="nav-link">部落格</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="ml-auto">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-xl-block">
-                <li class="cta"><a href="https://91app.kktix.cc/events/techday2020" class="nav-link"><span class="border bg-danger rounded text-white border-danger">立即報名</span></a></li>
-              </ul>
-            </nav>
-            <a href="#" class="d-inline-block d-xl-none site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a>
-          </div>
-        </div>
-      </div>
+			<div class="site-section section-2 bg-light" id="process-section" data-aos="fade">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 mb-5">
+							<h2 class="section-title">議程</h2>
+							<p>本活動採雙軌議程，儘早選擇您想要聽的議程喔！</p>
+						</div>
+					</div>
 
-    </header>
+					<div class="row">
+						<div class="col-md-12 col-lg-12 mb-12 mb-lg-0">
+							<div class="process bg-white rounded">
+								<div>
+									<span class="display-4 text-primary mb-4 d-inline-block"
+										><svg
+											class="bi bi-calendar"
+											width="1em"
+											height="1em"
+											viewBox="0 0 16 16"
+											fill="currentColor"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												d="M14 0H2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"
+												clip-rule="evenodd"
+											/>
+											<path
+												fill-rule="evenodd"
+												d="M6.5 7a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm-9 3a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm-9 3a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2z"
+												clip-rule="evenodd"
+											/></svg
+									></span>
+									<h3>11/28</h3>
+									<h3>14:00 ~ 14:30</h3>
+									<p>報到</p>
+									<hr />
+									<h3>14:30 ~ 14:40</h3>
+									<p>開場</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-6 mb-6 mb-lg-0">
+							<div class="process bg-white rounded">
+								<div>
+									<h3>Track A（一號教室）</h3>
+									<h3>14:40 ~ 15:20</h3>
+									<h4>專案重做的限制理論與刻意發現<br /><br /></h4>
+									<p>李智樺（Ruddy Lee）</p>
+									<p class="text-left">
+										專案重做一次，你需要多久時間？乍看這個議題牽扯到 DevOps、CI/CD、看板方法等技術，
+										但其實探討的是 「無知」與專案開始時如何應對資訊的貧乏。議程中我將運用 BDD 之父
+										Dan North 的刻意發現與高德拉特先生的限制理論進行詮釋。
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-6 mb-6 mb-lg-0">
+							<div class="process bg-white rounded">
+								<div>
+									<h3>Track B（一號教室）</h3>
+									<h3>14:40 ~ 15:20</h3>
+									<h4>非同步系統的服務水準保證；<br />淺談非同步系統的 SLO 設計</h4>
+									<p>吳剛志（Andrew Wu）</p>
+									<p class="text-left">
+										在支撐 91APP
+										每年百億訂單的背後，有一套負責管理全公司非同步任務的系統，乘載了每日超過百萬個
+										task、數百種類型的任務處理。
+										該如何兼顧任務的可靠度與服務水準？這個議程會來介紹架構團隊如何用系統化的方式來面對這個難題。<br /><br />
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-12 mb-12 mb-lg-0">
+							<div class="process bg-white rounded">
+								<div>
+									<h3>15:20 ~ 15:35</h3>
+									<p>休息、現場交流</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-6 mb-6 mb-lg-0">
+							<div class="process bg-white rounded">
+								<div>
+									<h3>Track A（一號教室）</h3>
+									<h3>15:35 ~ 16:15</h3>
+									<h4>如何面對雙十一的海量數據：<br />分析 TB 級日誌的實踐</h4>
+									<p>徐靖翰（Hans Hsu）</p>
+									<p class="text-left">
+										面對雙十一等級的大流量，公司系統日誌 (Log) 會高速累積， 這些日誌通常會達到上百
+										GB 甚至 TB，一個好的日誌分析解決方案，對公司不管商業或技術上都有重要價值。
+										這個議程會來聊聊使用場景、實際經驗、面臨的挑戰及解決方案。<br /><br />
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-6 mb-6 mb-lg-0">
+							<div class="process bg-white rounded">
+								<div>
+									<h3>Track B（一號教室）</h3>
+									<h3>15:35 ~ 16:15</h3>
+									<h4>從封閉走向開放，<br />談 91APP 如何建立策略合作夥伴計畫與生態圈</h4>
+									<p>唐宏瑞（Clement Tang）</p>
+									<p class="text-left">
+										自軟體產業開始往雲端發展，SaaS
+										公司無不希望打造一個強大的合作夥伴與生態系來強化自己的銷售、通路，以及自己的產品聚落。
+										我們將為大家揭露「91APP
+										策略合作夥伴計畫」是如何在產品、使用者與合作夥伴間建立起如飛輪效應般相互驅動的循環。
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-12 mb-12 mb-lg-0">
+							<div class="process bg-white rounded">
+								<div>
+									<h3>16:15 ~ 16:35</h3>
+									<p>休息、現場交流</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-6 mb-6 mb-lg-0">
+							<div class="process bg-white rounded">
+								<div>
+									<h3>Track A（一號教室）</h3>
+									<h3>16:35 ~ 17:15</h3>
+									<h4>全集中發送！<br />打造時速發送千萬筆訊息的通知服務</h4>
+									<p>陳俊毅（Levi Chen）</p>
+									<p class="text-left">
+										通知功能是電商常用的行銷手法，而 2020 雙十一我們被給予了半小時內送訊息給 3000
+										萬客戶的挑戰。 在這個議程我們會聊聊 91APP
+										如何從零打造每小時發送千萬訊息的通知服務。<br /><br />
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-6 mb-6 mb-lg-0">
+							<div class="process bg-white rounded">
+								<div>
+									<h3>Track B（一號教室）</h3>
+									<h3>16:35 ~ 17:15</h3>
+									<h4>雙11，91APP 到底在忙什麼？<br /><br /></h4>
+									<p>李崇維（Nick Lee）</p>
+									<p class="text-left">
+										雙十一，這個原本屬於大型電商平台的活動，在最近幾年大型實體品牌逐漸走向線上之後，也讓戰場持續擴大。我將會跟各位聊聊在雙十一的期間
+										91APP 碰到了哪些問題，如何改善以及我們如何準雙十一。
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-12 mb-12 mb-lg-0">
+							<div class="process bg-white rounded">
+								<div>
+									<h3>17:15 ~ 17:30</h3>
+									<p>尾聲</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-    <div class="intro-section custom-owl-carousel" id="home-section">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-5 mr-auto">
+			<div class="site-section section-2 bg-light" id="speaker-section" data-aos="fade">
+				<div class="container">
+					<div class="row text-center justify-content-center mb-5" data-aos="fade-up">
+						<div class="col-lg-6 mb-5 text-center">
+							<h2 class="section-title w-100 mx-auto">講師</h2>
+							<p>6 位講師、6 場精彩內容！<br />歡迎來現場直接與講師面對面互動！</p>
+						</div>
+					</div>
+					<div class="row">
+						<!-- Speaker block-->
+						<div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+							<div class="process bg-white rounded">
+								<div>
+									<img src="images/h2_ruddy.jpg" alt="Image" class="img-fluid" />
+									<blockquote style="padding-top: 20px">
+										<h4>李智樺（Ruddy Lee）</h4>
+										<p>敏捷教練</p>
+										<p class="author text-left">
+											具有超過 36
+											年的工程師經歷，擅長帶領研發團隊開發與創新，著作有：精實開發與看板方法、Windows
+											Azure 雲端開發、WF工作流程引擎程式設計、微軟 VSTS
+											開發實戰等書。曾擔任多家資訊公司的研發部經理，為專業的軟體工程顧問、Scrum
+											及看板課程教學的教練及講師。
+										</p>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+						<!-- End: Speaker block-->
+						<!-- Speaker block-->
+						<div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+							<div class="process bg-white rounded">
+								<div>
+									<img src="images/h2_andrew.jpg" alt="Image" class="img-fluid" />
+									<blockquote style="padding-top: 20px">
+										<h4>吳剛志（Andrew Wu）</h4>
+										<p>首席架構師</p>
+										<p class="author text-left">
+											談論各種軟體開發與設計的大小事，有 20
+											年的大型與雲端服務的開發經驗。喜歡研究各種技術背後的原理與實作細節，期許自己做個優秀的系統架構師。
+										</p>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+						<!-- End: Speaker block-->
+						<!-- Speaker block-->
+						<div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+							<div class="process bg-white rounded">
+								<div>
+									<img src="images/h2_hans.jpg" alt="Image" class="img-fluid" />
+									<blockquote style="padding-top: 20px">
+										<h4>徐靖翰（Hans Hsu）</h4>
+										<p>資深工程師</p>
+										<p class="author text-left">
+											過去在擔任某雲端代理商的方案解決架構師，目前任職 91APP 擔任 Infra
+											工程師，負責各種 AWS
+											相關的解決方案，喜歡研究開源元件及雲端技術，最後整合成解決方案提供給公司內部同仁使用。
+										</p>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+						<!-- End: Speaker block-->
+					</div>
+					<div class="row" style="padding-top: 30px">
+						<!-- Speaker block-->
+						<div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+							<div class="process bg-white rounded">
+								<div>
+									<img src="images/h2_clement.jpg" alt="Image" class="img-fluid" />
+									<blockquote style="padding-top: 20px">
+										<h4>唐宏瑞（Clement Tang）</h4>
+										<p>資深專案經理</p>
+										<p class="author text-left">
+											Chatbot Developers Taiwan 創辦人、Facebook Developer Circle: Taipei
+											社群領袖、CMX 社群經理社群團隊核心成員。現為 91APP 最熟悉 Facebook 產品與
+											API 的窗口，目前負責 91APP 策略合作夥伴計畫。
+										</p>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+						<!-- End: Speaker block-->
+						<!-- Speaker block-->
+						<div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+							<div class="process bg-white rounded">
+								<div>
+									<img src="images/h2_levi.jpg" alt="Image" class="img-fluid" />
+									<blockquote style="padding-top: 20px">
+										<h4>陳俊毅（Levi Chen）</h4>
+										<p>資深經理</p>
+										<p class="author text-left">
+											協助過學校、醫院建置 E-Learning 系統，研究過
+											Web、SDN、虛擬化技術，最近專注於探討 Cloud、分散式架構、Clean Code
+											等技術的本質，喜歡將自己咀嚼過的知識分享給其它人，不管是技術、運動或食譜。
+										</p>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+						<!-- End: Speaker block-->
+						<!-- Speaker block-->
+						<div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+							<div class="process bg-white rounded">
+								<div>
+									<img src="images/h2_nick.jpg" alt="Image" class="img-fluid" />
+									<blockquote style="padding-top: 20px">
+										<h4>李崇維（Nick Lee）</h4>
+										<p>資深工程師</p>
+										<p class="author text-left">
+											曾任某外商技術支援，後來覺得從事科技業好像要寫程式比較有前途，索性打掉重練，加入
+											AppWorks School 重新開始。從 2017 年起加入 91APP，從 iOS 寫到後端，目前在
+											91APP 擔任後端工程師。
+										</p>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+						<!-- End: Speaker block-->
+					</div>
+				</div>
+			</div>
 
-            <div class="owl-carousel slide-one-item-alt-text">
-              <div class="slide-text">
-                <h1>91APP TechDay 2020</h1>
-                <p class="mb-5">
-                  在電商的快速發展下，<br />
-                  每年的11月11日有了新的意義，<br />
-                  並晉升成為全球的購物狂歡盛會。<br />
-                  在面臨雙11巨額流量的挑戰下，<br />
-                  91APP 研發團隊是如何協助店家建立攻防戰，<br />
-                  並打造能支撐千萬等級流量的電商系統呢？<br />
-                  就讓 91APP TechDay 為您一一解答！
-                </p>
-                <p><a href="https://91app.kktix.cc/events/techday2020" target="_blank" class="btn btn-outline-light py-3 px-5 btn-order">立即報名</a></p>
-              </div>
-            </div>
+			<div class="site-section section-1" id="sp-section" data-aos="fade">
+				<div class="container">
+					<div class="row text-center justify-content-center mb-5" data-aos="fade-up">
+						<div class="col-lg-6 mb-5 text-center">
+							<h2 class="section-title w-100 mx-auto">合作夥伴</h2>
+							<p>本次活動感謝以下合作夥伴。</p>
+							<p>
+								<a href="http://study4.tw/" target="_blank"
+									><img
+										alt="http://study4.tw/"
+										src="https://t.kfs.io/organization_resource_files/13072/37437/study4.jpg"
+										style="width: 200px; height: 131px"
+								/></a>
+							</p>
+							<p>
+								<a href="https://www.tenlong.com.tw/" target="_blank"
+									><img
+										alt="https://www.tenlong.com.tw/"
+										src="https://t.kfs.io/organization_resource_files/13072/34756/tenlong_300.jpg"
+										style="width: 200px; height: 120px"
+								/></a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-          </div>
-          <div class="col-lg-6 ml-auto">
+			<div class="site-section section-1" id="rule-section">
+				<div class="container">
+					<div class="row text-center justify-content-center mb-5" data-aos="fade-up">
+						<div class="col-lg-12 mb-5 text-left">
+							<h2 class="section-title w-100 mx-auto text-center">大會守則</h2>
+							<p class="text-center">
+								參加本次活動還請您遵守以下大會守則，共同維護良好的活動品質，謝謝。
+							</p>
+							<hr />
+							<h4>防疫守則</h4>
+							<p>
+								因應 COVID-19 疫情，91APP TechDay
+								參考中央流行疫情指揮中心的防疫措施，發布大會實體活動防疫守則。請您與我們一同遵守，保護自己與他人的健康。
+							</p>
+							<p>
+								防疫守則將視疫情發展與中央疫情疫情指揮中心指示有所變動，所有更動將不另通知，請在會前持續回來關心。
+							</p>
 
-            <div class="owl-carousel slide-one-item-alt">
-              <img src="images/banner_001.jpg" alt="Image" class="img-fluid">
-              <img src="images/banner_007.jpg" alt="Image" class="img-fluid">
-              <img src="images/banner_003.jpg" alt="Image" class="img-fluid">
-              <img src="images/banner_004.jpg" alt="Image" class="img-fluid">
-              <img src="images/banner_005.jpg" alt="Image" class="img-fluid">
-              <img src="images/banner_008.jpg" alt="Image" class="img-fluid">
-              <img src="images/banner_006.jpg" alt="Image" class="img-fluid">
-            </div>
+							<h5>防疫要點</h5>
+							<ul>
+								<li>
+									配合我國中央流行疫情指揮中心的防疫措施「保持社交距離（室內 1.5 公尺、室外 1
+									公尺），無法維持社交距離時，應戴口罩」，參與者進入會場，應配戴口罩。
+								</li>
+								<li>
+									各議程場地採人數總量管制，會議室將有工作人員管控會議室內部人數，請聽從工作人員指示，若會議室已達人數上限請勿進入。
+								</li>
+								<li>
+									會場進出採實名制，與會者須於報到處報到換取識別證，有識別證之參與者方可進入會場，工作人員將在各議程場地入口檢查與會者識別證，請務必先完成報到領取識別證後再行入場。
+								</li>
+								<li>91APP TechDay 備有餐點，飲食完畢如無法維持社交距離須配戴口罩。</li>
+								<li>
+									若有身體不適或具感染風險（居家隔離、居家檢疫、自主健康管理）等情形者，請在家裡好好休息，勿前往
+									91APP TechDay 會場。
+								</li>
+							</ul>
 
-            <div class="owl-custom-direction">
-              <a href="#" class="custom-prev"><span class="icon-keyboard_arrow_left"></span></a>
-              <a href="#" class="custom-next"><span class="icon-keyboard_arrow_right"></span></a>
-            </div>
+							<h5>參與者防疫準備</h5>
+							<ul>
+								<li>
+									持線下實體票進入 91APP TechDay 活動會場前，請您配合填寫「<a
+										href="https://drive.google.com/file/d/1_Q3aI5YyFx1ViPh4Z02ttUcXrQC0EFFv/view"
+										>防範新型冠狀病毒肺炎訪客健康聲明卡</a
+									>」。（提醒您，於活動前提前列印、簽名「防範新型冠狀病毒肺炎訪客健康聲明卡」並帶來現場，可以加速您的報到流程喔！）
+								</li>
+								<li>
+									請您真實告知身體狀況，若您 14 天內自境外地區返台，或 14
+									天內與有境外地區返台者直接接觸，或已確診感染新型冠狀病毒肺炎，或與已確診感染新型冠狀病毒肺炎的人有直接接觸，不可進入
+									91APP TechDay 活動會場。
+								</li>
+								<li>請您配合量測體溫，您的體溫若超過 37.5 °C，不可進入 91APP TechDay 活動會場。</li>
+								<li>
+									配戴口罩：進入會場須全程配戴口罩，可以隨身多備 1~2
+									枚口罩。若您未配戴醫用外科口罩或其他合適的口罩，不可進入 91APP TechDay 活動會場。
+								</li>
+								<li>勤洗手，可搭配酒精消毒手部與座位。</li>
+							</ul>
 
-          </div>
-        </div>
-      </div>
-    </div>
+							<h5>大會防疫準備</h5>
+							<ul>
+								<li>大會於活動開始前，工作人員進行議程空間消毒。</li>
+								<li>大會報到處將備有額溫槍，若有身體不適者，可前往報到處量測。</li>
+								<li>大會報到處將備有消毒用酒精，如有需要，可自行取用。</li>
+							</ul>
 
+							<h5>隱私聲明</h5>
+							<ul>
+								<li>大會配合防疫期間所蒐集的資料，將在資料蒐集日起 28 天後刪除。</li>
+								<li>
+									參與者進出活動紀錄將作為疫情管控使用，若會後有任何疑似感染情況，大會將主動通知可能被影響的群眾，且得提供衛生主管機關依傳染病防治法等規定進行疫情調查及聯繫使用。
+								</li>
+							</ul>
+							<hr />
+							<h4>行為守則</h4>
+							<ul>
+								<li>
+									我是 91APP TechDay
+									的參與者，透過和其他會眾互相學習、分享，努力提昇自己和所處的產業。與會體驗是由我和其他會眾共同創造。我已經準備好為自己和其他與會者，貢獻我的活力、參與和感受來創造最好的體驗。
+								</li>
+								<li>
+									我是為了與人互動而來到 91APP
+									TechDay。我明白具暗示性或貶抑的圖像、言語會冒犯人而讓人不自在。我同時也明白每個人都有自己的禁忌和敏感之處。在活動期間，當被告知某些事冒犯到別人或是讓人無法接受時，我將無條件接受。
+								</li>
+								<li>
+									我絕對不會故意騷擾或冒犯其他與會者，無論性別、性傾向、殘疾、外貌、身材、種族或宗教，也不會坐視其他參與者被騷擾或冒犯。如果我知道有人感到不自在或不安全，我將會告知那些冒犯的人並通知大會。
+								</li>
+								<li>
+									如果我遭受騷擾或冒犯，我會告知身邊讓我有安全感的人以及大會。當我感到安全時，我會根據自己的判斷，告知那些冒犯者具體不當的行為，並希望對方是出於善意和無知的,
+									但我沒有義務這樣做。
+								</li>
+								<li>
+									我明白每個人都是不同的，我會視他人行為的真誠程度採取寬恕的態度。不過首要之事是保護我與其他參與者的安全。我將毫不猶服或毫不保留地採舉這樣的行動，直到所有人對於安全都不再有疑慮為止。
+								</li>
+								<li>
+									我相信 91APP TechDay 大會和與會者將會為所有人共同營造最好的體驗，如同我一樣。我相信
+									91APP TechDay
+									能讓人更具力量，而我不會忘記我在這裡獲取力量來建立一個安全、成長的環境。如果我或其他與會者違反了這個活動的精神，我期望大會挺身保護與會者，將違反者驅離並連絡相關當局。
+								</li>
+							</ul>
+							<hr />
+							<h4>反騷擾守則</h4>
+							<ul>
+								<li>
+									91APP TechDay
+									致力於提供每個與會者一個自在、安全與友善的環境。所有參與本次活動的與會者、講師、參展單位、工作人員，均應同意遵守下列的行為規範。不論性別、性傾向、殘疾、外貌、身材、種族或宗教。我們絕不容忍任何人騷擾與會者，無論任何形式。
+								</li>
+								<li>
+									騷擾包括有關性別，性別認同、年齡、性向、殘疾、外貌、體型、種族、宗教的攻擊性言語，或是在公共場合散播色情圖片、蓄意恐嚇、跟踪、騷擾性的攝影或錄影、多次打斷活動、不恰當的身體接觸，和讓人感到不舒服的性關注。參與者必須停止任何騷擾行為並且立即遵守行為準則。
+								</li>
+								<li>
+									反騷擾的政策也適用於本活動的參展單位。參展單位之攤位不應該使用任何帶有性含意的圖片、行為、或任何形式的內容。
+								</li>
+								<li>
+									91APP TechDay
+									所有的與會者不應使用任何帶有性含意的衣服、制服、裝扮，或以其他任何方式營造帶有性含意的環境。
+								</li>
+								<li>
+									如果與會者發生騷擾行為，大會可採取任何適合的行動，包含警告或將騷擾者驅離會場。如果您被騷擾，或是注意到有其他人被騷擾，還是有任何覺得不妥的地方，請立即告知工作人員。
+								</li>
+								<li>
+									您可以透過 91APP 識別證找到 91APP TechDay
+									工作人員。工作人員樂於協助與會者聯絡當地警察或是法律相關單位，提供護送或其他協助，讓遭受騷擾的人可以在會議期間感到安全。我們重視您的參與。
+								</li>
+								<li>
+									我們期望與會者在 91APP TechDay
+									所有場合（包含線上）以及相關社交或社群活動中，都能遵守這些規則。
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 
-    <div class="site-section section-1" id="info-section">
-      <div class="container">
-        <div class="row">
+			<footer class="footer-section bg-light">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<h3>關於 91APP Technical Group</h3>
+							<p>
+								91APP 產品發展聯合處負責開發、建置、維運 91APP
+								電商服務，為眾多企業品牌支撐千萬流量、開拓品牌虛實融合新商機，是 91APP
+								企業營運的重要推手之一。
+							</p>
+						</div>
 
-          <div class="col-lg-5 mb-5" data-aos="fade-up">
-            <div class="image-absolute-box">
-              <img src="images/image_001.jpg" alt="線上、線下，同步分享精彩演講內容！" class="img-fluid">
-            </div>
-          </div>
+						<div class="col-md-3 ml-auto">
+							<h3>Links</h3>
+							<ul class="list-unstyled footer-links">
+								<li><a href="#info-section" class="smoothscroll">活動資訊</a></li>
+								<li><a href="#process-section" class="smoothscroll">議程</a></li>
+								<li><a href="#speaker-section" class="smoothscroll">講師</a></li>
+								<li><a href="#sp-section" class="smoothscroll">合作夥伴</a></li>
+								<li><a href="#rule-section" class="smoothscroll">守則</a></li>
+								<li><a href="https://91app.kktix.cc/events/techday2020">立即報名</a></li>
+							</ul>
+						</div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="mb-5">
-              <h2 class="section-title">活動資訊</h2>
-                <p class="mb-5">11月28日（六）下午，和 91APP 來一場電商 Tech 之旅吧！</p>
-              <ul class="ul-check list-unstyled success">
-                <li>活動內容：雙軌制，總共 6 場演講。</li>
-                <li>日期與時間：
-                    <p>
-                      ・11/28 14:00 ~ 17:30
-                    </p>
-                </li>
-                <li>地點：WeTalk 維特空間<br /><a href="https://maps.google.com/maps?ll=25.0501343,121.5170607&&q=loc:25.0501343,121.5170607" target="_blank">臺北市大同區承德路一段17號4樓</a></li>
-                <li>費用：免費！<br>（請選擇現場票或線上票，請勿重複報名。）</li>
-              </ul>
-              <div class="box">
-                <h5><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5A.5.5 0 0 0 4 8z"/>
-</svg> 現場參加，領取好禮</h5>
-                <p>參加現場活動並填寫問卷，即可獲得現場小禮品。</p>
-                <p class="mb-0"><a class="btn btn-info" href="https://91app.kktix.cc/events/techday2020">立即報名</a></p>
-              </div>
-            </div>
-          </div>
+						<div class="col-md-4">
+							<h3>相關資源</h3>
+							<p>歡迎追蹤 91APP Technical Group，隨時關注 91APP 分享的最新電商技術資訊。</p>
+							<ul>
+								<li>
+									<a href="https://www.91app.tech"
+										><i class="fa fa-pen" aria-hidden="true"></i> 技術部落格</a
+									>
+								</li>
+								<li>
+									<a href="https://www.facebook.com/91apptech"
+										><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook 粉絲專頁</a
+									>
+								</li>
+								<li>
+									<a href="https://www.youtube.com/c/91APPTechnicalNetwork"
+										><i class="fa fa-youtube" aria-hidden="true"></i> YouTube Channel</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
 
-        </div>
-      </div>
+					<div class="row pt-5 mt-5 text-center">
+						<div class="col-md-12">
+							<div class="border-top pt-5">
+								<p>主辦單位保留活動異動之權利，更新資訊以網站內容為主。</p>
+								<p>
+									Copyright &copy;
+									<script>
+										document.write(new Date().getFullYear());
+									</script>
+									91APP Inc.
+								</p>
+								<p>
+									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+									This template is made with
+									<i class="icon-heart text-danger" aria-hidden="true"></i> by
+									<a href="https://colorlib.com" target="_blank">Colorlib</a>
+									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- .site-wrap -->
 
-    </div>
-
-    <div class="site-section section-2 bg-light" id="process-section" data-aos="fade">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mb-5">
-            <h2 class="section-title">議程</h2>
-            <p>本活動採雙軌議程，儘早選擇您想要聽的議程喔！</p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12 col-lg-12 mb-12 mb-lg-0">
-            <div class="process bg-white rounded">
-              <div>
-                <span class=" display-4 text-primary mb-4 d-inline-block"><svg class="bi bi-calendar" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M14 0H2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" clip-rule="evenodd"/>
-  <path fill-rule="evenodd" d="M6.5 7a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm-9 3a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm-9 3a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/>
-</svg></span>
-                <h3>11/28</h3>
-                <h3>14:00 ~ 14:30</h3>
-                <p>報到</p>
-                <hr>
-                <h3>14:30 ~ 14:40</h3>
-                <p>開場</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6 mb-6 mb-lg-0">
-            <div class="process bg-white rounded">
-              <div>
-                <h3>Track A</h3>
-                <h3>14:40 ~ 15:20</h3>
-                <h4>專案重做的限制理論與刻意發現<br><br></h4>
-                <p>李智樺（Ruddy Lee）</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6 mb-6 mb-lg-0">
-            <div class="process bg-white rounded">
-              <div>
-                <h3>Track B</h3>
-                <h3>14:40 ~ 15:20</h3>
-                <h4>非同步系統的服務水準保證；<br>淺談非同步系統的 SLO 設計</h4>
-                <p>吳剛志（Andrew Wu）</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12 col-lg-12 mb-12 mb-lg-0">
-            <div class="process bg-white rounded">
-              <div>
-                <h3>15:20 ~ 15:35</h3>
-                <p>休息、現場交流</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6 mb-6 mb-lg-0">
-            <div class="process bg-white rounded">
-              <div>
-                <h3>Track A</h3>
-                <h3>15:35 ~ 16:15</h3>
-                <h4>如何面對雙十一的海量數據：<br>分析 TB 級日誌的實踐</h4>
-                <p>即將公佈</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6 mb-6 mb-lg-0">
-            <div class="process bg-white rounded">
-              <div>
-                <h3>Track B</h3>
-                <h3>15:35 ~ 16:15</h3>
-                <h4>從封閉走向開放，<br>談 91APP 如何建立策略合作夥伴計畫與生態圈</h4>
-                <p>即將公佈</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12 col-lg-12 mb-12 mb-lg-0">
-            <div class="process bg-white rounded">
-              <div>
-                <h3>16:15 ~ 16:35</h3>
-                <p>休息、現場交流</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6 mb-6 mb-lg-0">
-            <div class="process bg-white rounded">
-              <div>
-                <h3>Track A</h3>
-                <h3>16:35 ~ 17:15</h3>
-                <h4>全集中發送！<br>打造時速發送千萬筆訊息的通知服務</h4>
-                <p>即將公佈</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6 mb-6 mb-lg-0">
-            <div class="process bg-white rounded">
-              <div>
-                <h3>Track B</h3>
-                <h3>16:35 ~ 17:15</h3>
-                <h4>雙11，91APP 到底在忙什麼？</h4>
-                <p>即將公佈</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12 col-lg-12 mb-12 mb-lg-0">
-            <div class="process bg-white rounded">
-              <div>
-                <h3>17:15 ~ 17:30</h3>
-                <p>尾聲</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="site-section section-2 bg-light" id="speaker-section" data-aos="fade">
-      <div class="container">
-        <div class="row text-center justify-content-center mb-5"  data-aos="fade-up">
-          <div class="col-lg-6 mb-5 text-center">
-            <h2 class="section-title w-100 mx-auto">講師</h2>
-            <p>6 位講師、6 場精彩內容！<br />歡迎來現場直接與講師面對面互動！</p>
-          </div>
-        </div>
-        <div class="row">
-          <!-- Speaker block-->
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="process bg-white rounded">
-              <div>
-                <img src="images/ruddy.jpg" alt="Image" class="img-fluid">
-                <blockquote style="padding-top: 20px;">
-                  <h4>李智樺（Ruddy Lee）</h4>
-                  <p>91APP 敏捷教練</p>
-                  <p class="author text-left">具有超過 36 年的工程師經歷，擅長帶領研發團隊開發與創新，著作有：精實開發與看板方法、Windows Azure 雲端開發、WF 工作流程引擎程式設計、微軟 VSTS 開發實戰等書。為專業的軟體工程顧問、Scrum 及看板課程教學的講師。曾擔任四家資訊公司的研發部經理。</p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-          <!-- End: Speaker block-->
-          <!-- Speaker block-->
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="process bg-white rounded">
-              <div>
-                <img src="images/andrew.jpg" alt="Image" class="img-fluid">
-                <blockquote style="padding-top: 20px;">
-                  <h4>吳剛志（Andrew Wu）</h4>
-                  <p>首席架構師</p>
-                  <p class="author text-left">談論各種軟體開發與設計的大小事，有 20 年的大型與雲端服務的開發經驗。喜歡研究各種技術背後的原理與實作細節，期許自己做個優秀的系統架構師。</p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-          <!-- End: Speaker block-->
-          <!-- Speaker block-->
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="process bg-white rounded">
-              <div>
-                <img src="images/nobody_h.jpg" alt="Image" class="img-fluid">
-                <blockquote style="padding-top: 20px;">
-                  <h4>即將公佈</h4>
-                  <p></p>
-                  <p class="author text-left"></p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-          <!-- End: Speaker block-->
-        </div>
-        <div class="row" style="padding-top: 30px">
-          <!-- Speaker block-->
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="process bg-white rounded">
-              <div>
-                <img src="images/nobody_c.jpg" alt="Image" class="img-fluid">
-                <blockquote style="padding-top: 20px;">
-                  <h4>即將公佈</h4>
-                  <p></p>
-                  <p class="author text-left"></p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-          <!-- End: Speaker block-->
-          <!-- Speaker block-->
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="process bg-white rounded">
-              <div>
-                <img src="images/nobody_l.jpg" alt="Image" class="img-fluid">
-                <blockquote style="padding-top: 20px;">
-                  <h4>即將公佈</h4>
-                  <p></p>
-                  <p class="author text-left"></p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-          <!-- End: Speaker block-->
-          <!-- Speaker block-->
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="process bg-white rounded">
-              <div>
-                <img src="images/nobody_n.jpg" alt="Image" class="img-fluid">
-                <blockquote style="padding-top: 20px;">
-                  <h4>即將公佈</h4>
-                  <p></p>
-                  <p class="author text-left"></p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-          <!-- End: Speaker block-->
-        </div>
-
-      </div>
-    </div>
-
-    <div class="site-section section-1" id="sp-section" data-aos="fade">
-      <div class="container">
-        <div class="row text-center justify-content-center mb-5"  data-aos="fade-up">
-          <div class="col-lg-6 mb-5 text-center">
-            <h2 class="section-title w-100 mx-auto">合作夥伴</h2>
-            <p>本次活動感謝以下合作夥伴。</p>
-            <p><a href="http://study4.tw/" target="_blank"><img alt="http://study4.tw/" src="https://t.kfs.io/organization_resource_files/13072/37437/study4.jpg" style="width: 200px; height: 131px;" /></a></p>
-            <p><a href="https://www.tenlong.com.tw/" target="_blank"><img alt="https://www.tenlong.com.tw/" src="https://t.kfs.io/organization_resource_files/13072/34756/tenlong_300.jpg" style="width: 200px; height: 120px;" /></a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="site-section section-1" id="rule-section">
-      <div class="container">
-        <div class="row text-center justify-content-center mb-5"  data-aos="fade-up">
-          <div class="col-lg-12 mb-5 text-left">
-            <h2 class="section-title w-100 mx-auto text-center">大會守則</h2>
-            <p class="text-center">參加本次活動還請您遵守以下大會守則，共同維護良好的活動品質，謝謝。</p>
-            <hr>
-            <h4>防疫守則</h4>
-            <p>因應 COVID-19 疫情，91APP TechDay 參考中央流行疫情指揮中心的防疫措施，發布大會實體活動防疫守則。請您與我們一同遵守，保護自己與他人的健康。</p>
-            <p>防疫守則將視疫情發展與中央疫情疫情指揮中心指示有所變動，所有更動將不另通知，請在會前持續回來關心。</p>
-
-            <h5>防疫要點</h5>
-            <ul>
-              <li>配合我國中央流行疫情指揮中心的防疫措施「保持社交距離（室內 1.5 公尺、室外 1 公尺），無法維持社交距離時，應戴口罩」，參與者進入會場，應配戴口罩。</li>
-              <li>各議程場地採人數總量管制，會議室將有工作人員管控會議室內部人數，請聽從工作人員指示，若會議室已達人數上限請勿進入。</li>
-              <li>會場進出採實名制，與會者須於報到處報到換取識別證，有識別證之參與者方可進入會場，工作人員將在各議程場地入口檢查與會者識別證，請務必先完成報到領取識別證後再行入場。</li>
-              <li>91APP TechDay 備有餐點，飲食完畢如無法維持社交距離須配戴口罩。</li>
-              <li>若有身體不適或具感染風險（居家隔離、居家檢疫、自主健康管理）等情形者，請在家裡好好休息，勿前往 91APP TechDay 會場。</li>
-            </ul>
-
-            <h5>參與者防疫準備</h5>
-            <ul>
-              <li>持線下實體票進入 91APP TechDay 活動會場前，請您配合填寫「<a href="https://drive.google.com/file/d/1_Q3aI5YyFx1ViPh4Z02ttUcXrQC0EFFv/view">防範新型冠狀病毒肺炎訪客健康聲明卡</a>」。（提醒您，於活動前提前列印、簽名「防範新型冠狀病毒肺炎訪客健康聲明卡」並帶來現場，可以加速您的報到流程喔！）</li>
-              <li>請您真實告知身體狀況，若您 14 天內自境外地區返台，或 14 天內與有境外地區返台者直接接觸，或已確診感染新型冠狀病毒肺炎，或與已確診感染新型冠狀病毒肺炎的人有直接接觸，不可進入 91APP TechDay 活動會場。</li>
-              <li>請您配合量測體溫，您的體溫若超過 37.5 °C，不可進入 91APP TechDay 活動會場。</li>
-              <li>配戴口罩：進入會場須全程配戴口罩，可以隨身多備 1~2 枚口罩。若您未配戴醫用外科口罩或其他合適的口罩，不可進入 91APP TechDay 活動會場。</li>
-              <li>勤洗手，可搭配酒精消毒手部與座位。</li>
-            </ul>
-
-            <h5>大會防疫準備</h5>
-            <ul>
-              <li>大會於活動開始前，工作人員進行議程空間消毒。</li>
-              <li>大會報到處將備有額溫槍，若有身體不適者，可前往報到處量測。</li>
-              <li>大會報到處將備有消毒用酒精，如有需要，可自行取用。</li>
-            </ul>
-
-            <h5>隱私聲明</h5>
-            <ul>
-              <li>大會配合防疫期間所蒐集的資料，將在資料蒐集日起 28 天後刪除。</li>
-              <li>參與者進出活動紀錄將作為疫情管控使用，若會後有任何疑似感染情況，大會將主動通知可能被影響的群眾，且得提供衛生主管機關依傳染病防治法等規定進行疫情調查及聯繫使用。</li>
-            </ul>
-            <hr>
-            <h4>行為守則</h4>
-            <ul>
-              <li>我是 91APP TechDay 的參與者，透過和其他會眾互相學習、分享，努力提昇自己和所處的產業。與會體驗是由我和其他會眾共同創造。我已經準備好為自己和其他與會者，貢獻我的活力、參與和感受來創造最好的體驗。</li>
-              <li>我是為了與人互動而來到 91APP TechDay。我明白具暗示性或貶抑的圖像、言語會冒犯人而讓人不自在。我同時也明白每個人都有自己的禁忌和敏感之處。在活動期間，當被告知某些事冒犯到別人或是讓人無法接受時，我將無條件接受。</li>
-              <li>我絕對不會故意騷擾或冒犯其他與會者，無論性別、性傾向、殘疾、外貌、身材、種族或宗教，也不會坐視其他參與者被騷擾或冒犯。如果我知道有人感到不自在或不安全，我將會告知那些冒犯的人並通知大會。</li>
-              <li>如果我遭受騷擾或冒犯，我會告知身邊讓我有安全感的人以及大會。當我感到安全時，我會根據自己的判斷，告知那些冒犯者具體不當的行為，並希望對方是出於善意和無知的, 但我沒有義務這樣做。</li>
-              <li>我明白每個人都是不同的，我會視他人行為的真誠程度採取寬恕的態度。不過首要之事是保護我與其他參與者的安全。我將毫不猶服或毫不保留地採舉這樣的行動，直到所有人對於安全都不再有疑慮為止。</li>
-              <li>我相信 91APP TechDay 大會和與會者將會為所有人共同營造最好的體驗，如同我一樣。我相信 91APP TechDay 能讓人更具力量，而我不會忘記我在這裡獲取力量來建立一個安全、成長的環境。如果我或其他與會者違反了這個活動的精神，我期望大會挺身保護與會者，將違反者驅離並連絡相關當局。</li>
-            </ul>
-            <hr>
-            <h4>反騷擾守則</h4>
-            <ul>
-              <li>91APP TechDay 致力於提供每個與會者一個自在、安全與友善的環境。所有參與本次活動的與會者、講師、參展單位、工作人員，均應同意遵守下列的行為規範。不論性別、性傾向、殘疾、外貌、身材、種族或宗教。我們絕不容忍任何人騷擾與會者，無論任何形式。</li>
-              <li>騷擾包括有關性別，性別認同、年齡、性向、殘疾、外貌、體型、種族、宗教的攻擊性言語，或是在公共場合散播色情圖片、蓄意恐嚇、跟踪、騷擾性的攝影或錄影、多次打斷活動、不恰當的身體接觸，和讓人感到不舒服的性關注。參與者必須停止任何騷擾行為並且立即遵守行為準則。</li>
-              <li>反騷擾的政策也適用於本活動的參展單位。參展單位之攤位不應該使用任何帶有性含意的圖片、行為、或任何形式的內容。</li>
-              <li>91APP TechDay 所有的與會者不應使用任何帶有性含意的衣服、制服、裝扮，或以其他任何方式營造帶有性含意的環境。</li>
-              <li>如果與會者發生騷擾行為，大會可採取任何適合的行動，包含警告或將騷擾者驅離會場。如果您被騷擾，或是注意到有其他人被騷擾，還是有任何覺得不妥的地方，請立即告知工作人員。</li>
-              <li>您可以透過 91APP 識別證找到 91APP TechDay 工作人員。工作人員樂於協助與會者聯絡當地警察或是法律相關單位，提供護送或其他協助，讓遭受騷擾的人可以在會議期間感到安全。我們重視您的參與。</li>
-              <li>我們期望與會者在 91APP TechDay 所有場合（包含線上）以及相關社交或社群活動中，都能遵守這些規則。</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer class="footer-section bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h3>關於 91APP Technical Group</h3>
-            <p>91APP 產品發展聯合處負責開發、建置、維運 91APP 電商服務，為眾多企業品牌支撐千萬流量、開拓品牌虛實融合新商機，是 91APP 企業營運的重要推手之一。</p>
-          </div>
-
-          <div class="col-md-3 ml-auto">
-            <h3>Links</h3>
-            <ul class="list-unstyled footer-links">
-              <li><a href="#info-section" class="smoothscroll">活動資訊</a></li>
-              <li><a href="#process-section" class="smoothscroll">議程</a></li>
-              <li><a href="#speaker-section" class="smoothscroll">講師</a></li>
-              <li><a href="#sp-section" class="smoothscroll">合作夥伴</a></li>
-              <li><a href="#rule-section" class="smoothscroll">守則</a></li>
-              <li><a href="https://91app.kktix.cc/events/techday2020">立即報名</a></li>
-            </ul>
-          </div>
-
-          <div class="col-md-4">
-            <h3>相關資源</h3>
-            <p>歡迎追蹤 91APP Technical Group，隨時關注 91APP 分享的最新電商技術資訊。</p>
-            <ul>
-              <li><a href="https://www.91app.tech"><i class="fa fa-pen" aria-hidden="true"></i> 技術部落格</a></li>
-              <li><a href="https://www.facebook.com/91apptech"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook 粉絲專頁</a></li>
-              <li><a href="https://www.youtube.com/c/91APPTechnicalNetwork"><i class="fa fa-youtube" aria-hidden="true"></i> YouTube Channel</a></li>
-            </ul>
-          </div>
-
-        </div>
-
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <div class="border-top pt-5">
-              <p>主辦單位保留活動異動之權利，更新資訊以網站內容為主。</p>
-              <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> 91APP Inc.</p>
-              <p>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </footer>
-
-
-
-  </div> <!-- .site-wrap -->
-
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-  <script src="js/main.js"></script>
-
-
-  </body>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/aos.js"></script>
+		<script src="js/jquery.fancybox.min.js"></script>
+		<script src="js/jquery.waypoints.min.js"></script>
+		<script src="js/jquery.animateNumber.min.js"></script>
+		<script src="js/jquery.sticky.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
