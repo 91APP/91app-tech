@@ -9,7 +9,9 @@ body {
   line-height: 1.7;
   color: gray;
   font-weight: 300;
-  font-size: 1.1rem; }
+  font-size: 1.1rem; 
+  overflow: hidden;
+}
 
 ::-moz-selection {
   background: #000;
